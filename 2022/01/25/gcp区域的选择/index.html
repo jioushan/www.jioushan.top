@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/favicon_pack/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_pack/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_pack/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_pack/android-chrome-192x192.png">
+    
+    
+        <link rel="mask-icon" href="/favicon_pack/safari-pinned-tab.svg">
+    
+
+
+    <!-- meta -->
+
+
+<title>GCP区域的选择 | Jioushan Blog</title>
+
+
+    <meta name="keywords" content="gcp, cloud flare, China Moble, China Telecom, China Unicom, CM, CT, CU, jioushan,mashiro,jsmsr,blog">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="若您曾看过我这篇文章 您应该意识到2022年了，事关此文章的经验已经过时了！ 为何半年左右我没有选择更新文章，一方面备案了一个域名，另一方面有些个人的事情要处理。 我们总是根据 路由回传 和 MTR 包括Ping来测试当下机器到达对方机器的最优网络！ 而所使用的工具方式不过是用来判断我们的链路（互联网链路）足不足够优秀的原因之一。 上游的网络ISP运营商是我们所选择的。（从某一条件下，更改它将变得">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GCP区域的选择">
+<meta property="og:url" content="https://www.jioushan.top/2022/01/25/gcp%E5%8C%BA%E5%9F%9F%E7%9A%84%E9%80%89%E6%8B%A9/index.html">
+<meta property="og:site_name" content="Jioushan Blog">
+<meta property="og:description" content="若您曾看过我这篇文章 您应该意识到2022年了，事关此文章的经验已经过时了！ 为何半年左右我没有选择更新文章，一方面备案了一个域名，另一方面有些个人的事情要处理。 我们总是根据 路由回传 和 MTR 包括Ping来测试当下机器到达对方机器的最优网络！ 而所使用的工具方式不过是用来判断我们的链路（互联网链路）足不足够优秀的原因之一。 上游的网络ISP运营商是我们所选择的。（从某一条件下，更改它将变得">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-01-25T08:13:13.000Z">
+<meta property="article:modified_time" content="2023-04-16T16:52:19.642Z">
+<meta property="article:author" content="Jioushan">
+<meta property="article:tag" content="gcp">
+<meta property="article:tag" content="cloud flare">
+<meta property="article:tag" content="China Moble">
+<meta property="article:tag" content="China Telecom">
+<meta property="article:tag" content="China Unicom">
+<meta property="article:tag" content="CM">
+<meta property="article:tag" content="CT">
+<meta property="article:tag" content="CU">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Jioushan Blog</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">Index</a>
+                
+                    <a href="/archives/" class="navbar-menu button">archives</a>
+                
+                    <a href="/friends/" class="navbar-menu button">friends</a>
+                
+                    <a href="/about/" class="navbar-menu button">About me</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">Index</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">archives</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">friends</a>
+                
+                    <a href="/about/" class="dropdown-menu button">About me</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        GCP区域的选择
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2022/01/" class="post-meta__date button">2022-01-25</a>
+        
+    <span class="separate-dot"></span><a href="/categories/uncategorized/" class="button">uncategorized</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
+        
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p>若您曾看过我<a href="https://www.jioushan.top/2020/01/12/%E5%9B%BD%E5%86%85%E4%B8%89%E5%A4%A7%E8%BF%90%E8%90%A5%E5%95%86%E5%AF%B9%E4%BA%8E%E5%A4%A7%E5%8E%82%E7%9A%84%E5%B0%8F%E9%B8%A1%E7%BA%BF%E8%B7%AF%E5%A6%82%E4%BD%95%E3%80%82/">这篇文章</a> 您应该意识到2022年了，事关此文章的经验已经过时了！</p>
+<p>为何半年左右我没有选择更新文章，一方面备案了一个域名，另一方面有些个人的事情要处理。</p>
+<p>我们总是根据 路由回传 和 MTR 包括Ping来测试当下<strong>机器</strong>到达对方<strong>机器</strong>的最优<strong>网络</strong>！</p>
+<p>而所使用的工具方式不过是用来判断我们的链路（互联网链路）足不足够优秀的原因之一。</p>
+<p>上游的网络ISP运营商是我们所选择的。（从某一条件下，更改它将变得需要时间和大量金钱）</p>
+<p>而购买的机器的随着对方商家所提供的线路也是不同的。（从某一条件下，更改它也需要一定时间和金钱</p>
+<p>而我们能做的是什么呢？自己成立ISP运营商，拥有购置自己的服务器，注册ASN，获得所属自己的IP段和优化的线路进行Peer，更高级的路由表</p>
+<p>设定IX交换中心。减缓流量攻击和更优化的隧道链路。</p>
+<p>打住，我想这绝非普通玩家想要的答案。</p>
+<p>（虽然曾我这样做过。时间和金钱成本上使得此事件不断的放弃了。（鸽子?</p>
+<p>而此期文章 时隔三年，GCP（谷歌云）的链路选择。或者说国内三大公有运营商交的钱又变得不一样了。</p>
+<p>关于简称China Unicom（CU）China telecom（CT）China mobile（CM）</p>
+<ul>
+<li>香港区域</li>
+<li>35.220.0.0.(建议选择 CU和CT) （我曾说此IP段适用于CM，但2022年，此IP段 联通和电信的时延才算的上优选，而CM将出现了北京出口-英国-印度-香港的全球绕路）</li>
+<li>截止至写此文章时，我仍在寻找适合CM的GCP 优质IP段。在某些情况下 不得不放弃香港段。</li>
+<li>34.92.0.0(建议选择CT(ASN4134 163)和CU) 34.96.0.0 (同上)</li>
+</ul>
+<p>CM 不合适GCP 得出结论</p>
+<p>建议IPLC或者CU&#x2F;CT 跳板中转</p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>Author: </strong>jioushan
+        </p>
+        <p>
+            <strong>
+                Permalink: 
+            </strong>
+            <a href="https://www.jioushan.top/2022/01/25/gcp%E5%8C%BA%E5%9F%9F%E7%9A%84%E9%80%89%E6%8B%A9/">https://www.jioushan.top/2022/01/25/gcp%E5%8C%BA%E5%9F%9F%E7%9A%84%E9%80%89%E6%8B%A9/</a>
+        </p>
+        
+            <strong>
+                <p>The article is licensed under the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a> agreement by default, please pay attention to comply with the agreement when using it.</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>updated at 2023-04-17</p></div> 
+    <div class="post-entry__tags"><a href="/tags/gcp/" class="post-tags__link button"># gcp</a><a href="/tags/cloud-flare/" class="post-tags__link button"># cloud flare</a><a href="/tags/China-Moble/" class="post-tags__link button"># China Moble</a><a href="/tags/China-Telecom/" class="post-tags__link button"># China Telecom</a><a href="/tags/China-Unicom/" class="post-tags__link button"># China Unicom</a><a href="/tags/CM/" class="post-tags__link button"># CM</a><a href="/tags/CT/" class="post-tags__link button"># CT</a><a href="/tags/CU/" class="post-tags__link button"># CU</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2022/03/04/minio%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A1%B6%E6%90%AD%E5%BB%BA-2/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            Minio distributed bucket construction
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2022/01/03/about-something-happening/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            About something happening
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments post__with-toc content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    <div id="disqus_thread">Unable to load Disqus, please make sure your network can access.</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2023 <a href="/">Jioushan Blog</a>
+        </p>
+    
+    
+        
+            <p><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">鲁ICP备19049325号</a></p>
+
+        
+            <p><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37142602000108">鲁公网安备 37142602000107号</a></p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+    
+    <script>
+        function loadComment() {
+            window.disqus_config = function () {
+                this.page.url = 'https://www.jioushan.top/2022/01/25/gcp%E5%8C%BA%E5%9F%9F%E7%9A%84%E9%80%89%E6%8B%A9/';
+                this.page.identifier = '2022/01/25/gcp区域的选择/';
+            };
+            (function(){
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + 'jioushan-blog' + '.disqus.com/embed.js';
+                (document.head || document.body).appendChild(dsq);
+            })();
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+    </body>
+</html>

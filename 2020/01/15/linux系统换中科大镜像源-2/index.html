@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/favicon_pack/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_pack/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_pack/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_pack/android-chrome-192x192.png">
+    
+    
+        <link rel="mask-icon" href="/favicon_pack/safari-pinned-tab.svg">
+    
+
+
+    <!-- meta -->
+
+
+<title>Linux システムは、大きなミラー ソースに交換されます | Jioushan Blog</title>
+
+
+    <meta name="keywords" content="jioushan,mashiro,jsmsr,blog">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="ミラーソースは、もちろん、国内で使用されています。 国内、清華、中国科学院、アリ、ネットイース。 大丈夫よ ここでアムウェイ中央科学大学のミラーソースを望んでいないが、彼らは非常によく動作するツールを持っていると言わざるを得ない。 このアクセスをポイントします ここでは、https アクセス (キャリア シールド http を節約する) ipv6&#x2F;ipv4 を選択するだけで、プロトコルの">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux システムは、大きなミラー ソースに交換されます">
+<meta property="og:url" content="https://www.jioushan.top/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90-2/index.html">
+<meta property="og:site_name" content="Jioushan Blog">
+<meta property="og:description" content="ミラーソースは、もちろん、国内で使用されています。 国内、清華、中国科学院、アリ、ネットイース。 大丈夫よ ここでアムウェイ中央科学大学のミラーソースを望んでいないが、彼らは非常によく動作するツールを持っていると言わざるを得ない。 このアクセスをポイントします ここでは、https アクセス (キャリア シールド http を節約する) ipv6&#x2F;ipv4 を選択するだけで、プロトコルの">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-15T15:48:54.000Z">
+<meta property="article:modified_time" content="2023-04-16T16:52:19.610Z">
+<meta property="article:author" content="Jioushan">
+<meta property="article:tag" content="jioushan,mashiro,jsmsr,blog">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Jioushan Blog</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">Index</a>
+                
+                    <a href="/archives/" class="navbar-menu button">archives</a>
+                
+                    <a href="/friends/" class="navbar-menu button">friends</a>
+                
+                    <a href="/about/" class="navbar-menu button">About me</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">Index</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">archives</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">friends</a>
+                
+                    <a href="/about/" class="dropdown-menu button">About me</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        Linux システムは、大きなミラー ソースに交換されます
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2020/01/" class="post-meta__date button">2020-01-15</a>
+        
+    <span class="separate-dot"></span><a href="/categories/uncategorized/" class="button">uncategorized</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-text">原因:</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-text">原因:</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p>ミラーソースは、もちろん、国内で使用されています。 国内、清華、中国科学院、アリ、ネットイース。 大丈夫よ</p>
+<p>ここでアムウェイ中央科学大学のミラーソースを望んでいないが、彼らは非常によく動作するツールを持っていると言わざるを得ない。</p>
+<p><a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/repogen/">このアクセスをポイントします</a></p>
+<p>ここでは、https アクセス (キャリア シールド http を節約する) ipv6&#x2F;ipv4 を選択するだけで、プロトコルのサポートを確認できます。</p>
+<p>しかし、モバイルIPV6は本当に問題があります。 知らないうちは ipv4 を選ぶ</p>
+<p>私はデビアンとUbuntuの各バージョンの中国科学院のミラーソースを参照してください。 毎回自分自身を保存し、そのトラブルにバージョンを変更します。</p>
+<h4 id="原因"><a href="#原因" class="headerlink" title="原因:"></a>原因:</h4><p>raspberry PI 4B+</p>
+<p>見てみましょう、このパイ(4b+がサポートしているシステムのみ)</p>
+<ul>
+<li>openWrt (ソフトルート)</li>
+<li>公式デビアン</li>
+<li>公式Ubuntu server 19.10(これはピットです)</li>
+<li>BalenaCloud (モノのインターネット、おそらく Windows lot と azure を接続するもの、 ジョークのように、国内のネットワーク環境について考えると、基本的に 90% のパケット損失を残します。 結果が見つかりました。 このネットワーク環境では、その場で爆発する)</li>
+<li>Windows lot(4B はサポートされていません)</li>
+<li>Windows 10 ARM(4B はサポートされていません) この 4B+ UEFI は互換性がありません。</li>
+<li>コーディ(テレビボックス、死んでください。 今2020年です。 kodi 2019国内プラグインは、基本的に無駄です。 コーディが<strong>科学的にインターネットを使</strong>えないと 期待してるの? <strong>M3U8</strong> <strong>PVRストリーム</strong>はTVを見ることができます)</li>
+<li>Ubuntu Mate(4Bはサポートされていません、尋ねないでください、尋ねることは、入力することはできません。 適していません。 HDMIを接続するための信号なし)</li>
+<li>mozilla iot.(Balenaと同じジョークが、私は設定していない、私はFirefoxのサーバーはまだ国内で使用することができると思います。 しかし、それはフィットしているように見えます。 私は実際にそれを使用することはできません。 ）</li>
+<li>NAS(あなたは本当にオタクなら、私はあなたを信じて、あなたが成功すると思う)、</li>
+</ul>
+<p>一言で言えば、公式のDebianは最高の使用されます。 あなたを投げることができる他のものは非常に動揺しています。 情報を見つけるのに苦労した。 無力は、他のOSを焼くだけです。</p>
+<p>はい、最近のCFユニコムでは、通信ノードルームが爆発していることがわかりました。 ホームページへのアクセスは、更新の下で解決するために弱いです。</p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>Author: </strong>jioushan
+        </p>
+        <p>
+            <strong>
+                Permalink: 
+            </strong>
+            <a href="https://www.jioushan.top/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90-2/">https://www.jioushan.top/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90-2/</a>
+        </p>
+        
+            <strong>
+                <p>The article is licensed under the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a> agreement by default, please pay attention to comply with the agreement when using it.</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>updated at 2023-04-17</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2020/01/16/ipv6-ipv4-2/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            ipv6-&gt;ipv4
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90-3/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            Linux system to change the image source of the University of Science and Technology
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments post__with-toc content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    <div id="disqus_thread">Unable to load Disqus, please make sure your network can access.</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2023 <a href="/">Jioushan Blog</a>
+        </p>
+    
+    
+        
+            <p><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">鲁ICP备19049325号</a></p>
+
+        
+            <p><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37142602000108">鲁公网安备 37142602000107号</a></p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+    
+    <script>
+        function loadComment() {
+            window.disqus_config = function () {
+                this.page.url = 'https://www.jioushan.top/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90-2/';
+                this.page.identifier = '2020/01/15/linux系统换中科大镜像源-2/';
+            };
+            (function(){
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + 'jioushan-blog' + '.disqus.com/embed.js';
+                (document.head || document.body).appendChild(dsq);
+            })();
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+    </body>
+</html>

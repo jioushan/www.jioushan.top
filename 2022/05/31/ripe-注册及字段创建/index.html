@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/favicon_pack/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_pack/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_pack/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_pack/android-chrome-192x192.png">
+    
+    
+        <link rel="mask-icon" href="/favicon_pack/safari-pinned-tab.svg">
+    
+
+
+    <!-- meta -->
+
+
+<title>RIPE 注册及字段创建 | Jioushan Blog</title>
+
+
+    <meta name="keywords" content="APNIC, JSMSR, NetWork, RIPE, jioushan,mashiro,jsmsr,blog">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="BGP Player 作为接下来即以后要讲述的企划！ 这部分文字的重要性，而我认为此篇文字 将为JNE（Jsmsr Experimental Network）重要开篇！ JSMSR only ipv6 RPIE 注册教程 本文字 来源于 夜空 文章 RIPE账号注册与必要字段创建首先 您应该注册一个ripe账户，建议常用邮箱 以便于维护 找寻 注册地址：https:&#x2F;&#x2F;access.ripe.ne">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RIPE 注册及字段创建">
+<meta property="og:url" content="https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/index.html">
+<meta property="og:site_name" content="Jioushan Blog">
+<meta property="og:description" content="BGP Player 作为接下来即以后要讲述的企划！ 这部分文字的重要性，而我认为此篇文字 将为JNE（Jsmsr Experimental Network）重要开篇！ JSMSR only ipv6 RPIE 注册教程 本文字 来源于 夜空 文章 RIPE账号注册与必要字段创建首先 您应该注册一个ripe账户，建议常用邮箱 以便于维护 找寻 注册地址：https:&#x2F;&#x2F;access.ripe.ne">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn2.jioushan.top/LightPicture/2022/05/febc1e3387234cf3.png">
+<meta property="og:image" content="https://cdn2.jioushan.top/LightPicture/2022/05/2e16817713d65b4f.png">
+<meta property="og:image" content="https://cdn2.jioushan.top/LightPicture/2022/05/0c875d5eab923282.png">
+<meta property="og:image" content="https://cdn2.jioushan.top/LightPicture/2022/05/5bac71c3a6ea019b.png">
+<meta property="article:published_time" content="2022-05-31T09:35:38.000Z">
+<meta property="article:modified_time" content="2023-04-16T16:52:19.645Z">
+<meta property="article:author" content="Jioushan">
+<meta property="article:tag" content="APNIC">
+<meta property="article:tag" content="JSMSR">
+<meta property="article:tag" content="NetWork">
+<meta property="article:tag" content="RIPE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn2.jioushan.top/LightPicture/2022/05/febc1e3387234cf3.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Jioushan Blog</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">Index</a>
+                
+                    <a href="/archives/" class="navbar-menu button">archives</a>
+                
+                    <a href="/friends/" class="navbar-menu button">friends</a>
+                
+                    <a href="/about/" class="navbar-menu button">About me</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">Index</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">archives</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">friends</a>
+                
+                    <a href="/about/" class="dropdown-menu button">About me</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        RIPE 注册及字段创建
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2022/05/" class="post-meta__date button">2022-05-31</a>
+        
+    <span class="separate-dot"></span><a href="/categories/Network/" class="button">Network</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RIPE%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BF%85%E8%A6%81%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA"><span class="toc-text">RIPE账号注册与必要字段创建</span></a></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RIPE%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%BF%85%E8%A6%81%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA"><span class="toc-text">RIPE账号注册与必要字段创建</span></a></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p>BGP Player</p>
+<p>作为接下来即以后要讲述的企划！</p>
+<p>这部分文字的重要性，而我认为此篇文字 将为JNE（Jsmsr Experimental Network）重要开篇！</p>
+<p><a target="_blank" rel="noopener" href="http://www.jsmsr.com/">JSMSR</a> <strong>only ipv6</strong></p>
+<p>RPIE 注册教程</p>
+<p>本文字 来源于 夜空 <a target="_blank" rel="noopener" href="https://web.archive.org/web/20190227042014/https:/www.ykhut.com/archives/72/">文章</a></p>
+<h2 id="RIPE账号注册与必要字段创建"><a href="#RIPE账号注册与必要字段创建" class="headerlink" title="RIPE账号注册与必要字段创建"></a>RIPE账号注册与必要字段创建</h2><p>首先 您应该注册一个ripe账户，建议常用邮箱 以便于维护 找寻</p>
+<p><strong>注册地址：</strong><a target="_blank" rel="noopener" href="https://web.archive.org/web/20190227042014/https://www.ykhut.com/go/aHR0cHM6Ly9hY2Nlc3MucmlwZS5uZXQvcmVnaXN0cmF0aW9u"></a><a target="_blank" rel="noopener" href="https://web.archive.org/web/20190227042014/https://www.ykhut.com/go/aHR0cHM6Ly9hY2Nlc3MucmlwZS5uZXQvcmVnaXN0cmF0aW9u">https://access.ripe.net/registration</a></p>
+<p>通过邮箱验证之后 您应当在控制面板 创建一些 字段和值</p>
+<p><strong>首先创建person 和 maintainer</strong></p>
+<p><img src="https://cdn2.jioushan.top/LightPicture/2022/05/febc1e3387234cf3.png"></p>
+<p>点击create创建此字段</p>
+<p><strong>mntner:</strong> 维护者的字段名，纯英文，可包含”-“和”_“，建议格式为_*_-MNT，例如YekongTAT-MNT</p>
+<p><strong>person:</strong> 维护者的称呼，可以写全名或其他名称。可包含英文、数字和.`‘_-</p>
+<p><strong>address:</strong> 地址<br><strong>phone:</strong> 手机号，建议格式为+国家区号.手机号，例如+85211112222</p>
+<p>创建之后</p>
+<p><img src="https://cdn2.jioushan.top/LightPicture/2022/05/2e16817713d65b4f.png"></p>
+<p>person with primary key</p>
+<p>“MNS89-RIPE”</p>
+<p>以及</p>
+<p>mntner with primary key “MoeQing-MNT”<br>这两个分别为admin-c以及mntner&#x2F;mnt-ref，如果以后遇到需要填写这两个字段的，那么填写这两个即可。<br>一切完成后即可下一步。</p>
+<hr>
+<p><strong>接下来 创建role对象</strong></p>
+<p>和前面相同，选择”role”对象创建即可</p>
+<p><img src="https://cdn2.jioushan.top/LightPicture/2022/05/0c875d5eab923282.png"></p>
+<p>role: 起名字环节，建议格式XXX NOC<br>address: 与前面相同<br>nic-hdl： 可保持默认。</p>
+<p>然后 点击nic-hdl 旁边的 <strong>+</strong></p>
+<p>我们新建一项 abuse-mailbox字段，输入你的邮箱即可，然后就可以提交了。</p>
+<p>之后您会得到这样的字段 role “MN12319-RIPE”，这个为<strong>abuse-c</strong>,如果以后遇到需要填写这两个字段的，那么填写这个即可。</p>
+<hr>
+<p><strong>创建organisation对象</strong></p>
+<p><img src="https://cdn2.jioushan.top/LightPicture/2022/05/5bac71c3a6ea019b.png"></p>
+<p>字段解释：<br>organisation: 可保持默认。<br>org-name: 组织名称，可包含字母数字”-“和”_“，名称的第一个字符必须是字母，最后一个字符必须是字母或数字。某些单词由RPSL保留，不能使用。</p>
+<p>org-type: 保持默认，也无法更改。<br>address: 地址栏，如果你要申请ASN请填写证件国家对应的地址。<br>e-mail: 填写你的邮箱。<br>abuse-c: 上文提到过，请填写role相关字段。<br>mnt-ref: 添加维护者对象。上文提到过，请填写mntner</p>
+<p>请保存好以上资料。如有遗忘，请通过ripe数据库查询功能反向查询到内容</p>
+<p>感谢此原文章由夜空所写，本篇为搬运&#x2F;补档，便于查询 理解 通过ripe IRR 数据库练手即在其他区域网络自治中心 维护字段信息，其内容大同小异。更多内容，以后将细讲！</p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>Author: </strong>jioushan
+        </p>
+        <p>
+            <strong>
+                Permalink: 
+            </strong>
+            <a href="https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/">https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/</a>
+        </p>
+        
+            <strong>
+                <p>The article is licensed under the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a> agreement by default, please pay attention to comply with the agreement when using it.</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>updated at 2023-04-17</p></div> 
+    <div class="post-entry__tags"><a href="/tags/APNIC/" class="post-tags__link button"># APNIC</a><a href="/tags/JSMSR/" class="post-tags__link button"># JSMSR</a><a href="/tags/NetWork/" class="post-tags__link button"># NetWork</a><a href="/tags/RIPE/" class="post-tags__link button"># RIPE</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2022/06/22/%E4%B8%80%E4%B8%AA%E5%9F%9F%E5%90%8D%E7%9A%84%E9%80%80%E5%BD%B9%E7%BB%93%E6%9D%9F/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            一个域名的退役结束
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2022/05/18/%E8%B0%88%E8%B0%88zuij/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            谈谈最近
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments post__with-toc content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    <div id="disqus_thread">Unable to load Disqus, please make sure your network can access.</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    </div>
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2023 <a href="/">Jioushan Blog</a>
+        </p>
+    
+    
+        
+            <p><a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/">鲁ICP备19049325号</a></p>
+
+        
+            <p><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37142602000108">鲁公网安备 37142602000107号</a></p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+    
+    <script>
+        function loadComment() {
+            window.disqus_config = function () {
+                this.page.url = 'https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/';
+                this.page.identifier = '2022/05/31/ripe-注册及字段创建/';
+            };
+            (function(){
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + 'jioushan-blog' + '.disqus.com/embed.js';
+                (document.head || document.body).appendChild(dsq);
+            })();
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+    </body>
+</html>
