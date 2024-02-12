@@ -33,7 +33,7 @@ RPIE 注册教程
 
 **首先创建person 和 maintainer**
 
-![](https://cdn2.jioushan.top/LightPicture/2022/05/febc1e3387234cf3.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/05/febc1e3387234cf3.png)
 
 点击create创建此字段
 
@@ -46,7 +46,7 @@ RPIE 注册教程
 
 创建之后
 
-![](https://cdn2.jioushan.top/LightPicture/2022/05/2e16817713d65b4f.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/05/2e16817713d65b4f.png)
 
 person with primary key
 
@@ -64,7 +64,7 @@ mntner with primary key "MoeQing-MNT"
 
 和前面相同，选择"role"对象创建即可
 
-![](https://cdn2.jioushan.top/LightPicture/2022/05/0c875d5eab923282.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/05/0c875d5eab923282.png)
 
 role: 起名字环节，建议格式XXX NOC  
 address: 与前面相同  
@@ -80,7 +80,7 @@ nic-hdl： 可保持默认。
 
 **创建organisation对象**
 
-![](https://cdn2.jioushan.top/LightPicture/2022/05/5bac71c3a6ea019b.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/05/5bac71c3a6ea019b.png)
 
 字段解释：  
 organisation: 可保持默认。  
