@@ -13,7 +13,7 @@ date: 2020-03-05 14:49:40
 
 上个月底朋友丢给我一篇文章。关于英伟达 的NOW 可以免费白嫖他的免费套餐。好像是可以免费每天1小时。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/5726cd10ff4a8ec9.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/5726cd10ff4a8ec9.jpg)
 
 说起云游戏。最早做这个应该是国内 [达龙云](https://www.dalongyun.com/) 。但是普遍资费高昂。后来达龙云可能换了上家。感觉服务调整了不少。被玩家唾弃。
 
@@ -29,7 +29,7 @@ date: 2020-03-05 14:49:40
 
 首选它是支持手柄控制与键盘控制。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/1ced59a45dad1df9.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/1ced59a45dad1df9.jpg)
 
 PANDAY2手柄控制示意图
 
@@ -37,39 +37,39 @@ PANDAY2手柄控制示意图
 
 当然也有好消息。是19年底左右。英伟达在部署亚洲这边。日本与韩国这方面NVIDIA NOW 服务。日本是由[软银softbank](https://cloudgaming.mb.softbank.jp/)代理的。3月1日前第一批预注册结束。同期年前左右的两批beta资格以经发放完毕。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/c50ae811e3498344.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/c50ae811e3498344.png)
 
 7月底前都可以注册。每个月1k8日元的体验。预注册之前免费游玩。
 
 是的，我不在测试里面。要不然我应该使用较低的延迟的日本服务器来获得游戏体验。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/bcb6753c51ea45a5.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/bcb6753c51ea45a5.jpg)
 
 排队中的nvdia now 服务也是很快的。30s左右就进去了（暗示，国内顺网云，排队3个人得30min）
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/1c72e9eed9dd079b.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/1c72e9eed9dd079b.jpg)
 
 CSGO （注意是国际区）
 
 因为是US的服务器。所以我这边白给GO（CSGO）周围玩家是在搜索玩家的美国与加拿大玩家。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/c4cd31b5b371ed4d.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/c4cd31b5b371ed4d.jpg)
 
 自己的日区LOL 开到了 本命英雄 普朗克 的折扣特种部队 皮肤
 
 是的，我是个船长玩家。上单铁混子。当然这个版本对船长真的不优好。很难C的样子。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/ba88f8c5e04e3b9a.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/ba88f8c5e04e3b9a.jpg)
 
 是有看门狗1和看门狗2 的和一些EPIC 的游戏的。
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/a67996d9d44bf3f9.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/a67996d9d44bf3f9.jpg)
 
 经典系列半条命。hitman 。Steam 平台游戏还是蛮多的。当然没有小黄油。Galgame。摊手。
 
 没看到PUBG和GTA 系列、刺客信条也只有一部。目前还没有看到暴雪的游戏。如果**天命2**算的话。2333
 
-![](https://cdn2.jioushan.top/LightPicture/2022/03/322d91829cfdff25.jpg)
+![](https://cdn2.jsmsr.com/LightPicture/2022/03/322d91829cfdff25.jpg)
 
 西班牙的IP。ASN 果然是英伟达
 

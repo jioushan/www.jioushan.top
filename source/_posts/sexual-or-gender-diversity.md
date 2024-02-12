@@ -1,16 +1,15 @@
 ---
-title: 性别多元化?️‍?
+title: 性别多元化
 tags:
   - bisexual
   - gay
   - LES
   - LGBT
   - Pansexual
-  - 彩虹群体
+  - 彩虹
 id: '1007'
 categories:
-  - - lgbt
-  - - 我的观点看法与言论！
+  - - lgbtq
 date: 2021-04-30 19:08:28
 ---
 

@@ -4,7 +4,7 @@ tags:
   - Swap
 id: '1352'
 categories:
-  - - 杂谈
+  - - Linux
 date: 2022-11-25 19:26:28
 ---
 

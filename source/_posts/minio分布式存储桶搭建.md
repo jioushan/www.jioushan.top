@@ -6,7 +6,7 @@ tags:
   - 分布式存储
 id: '1227'
 categories:
-  - - 杂谈
+  - - Linux
 date: 2022-03-04 13:50:44
 ---
 

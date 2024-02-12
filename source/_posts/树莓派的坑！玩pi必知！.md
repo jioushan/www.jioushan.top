@@ -1,9 +1,9 @@
 ---
-title: 树莓派的坑！玩pi必知！
+title: 树莓派的坑,玩pi必知
 tags: []
 id: '592'
 categories:
-  - - 杂谈
+  - - note
 date: 2019-09-06 21:13:55
 ---
 

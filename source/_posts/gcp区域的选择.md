@@ -8,10 +8,9 @@ tags:
   - CM
   - CT
   - CU
-  - gcp
 id: '1219'
 categories:
-  - - uncategorized
+  - - note
 date: 2022-01-25 16:13:13
 ---
 

@@ -5,7 +5,7 @@ tags:
   - prefix
 id: '1347'
 categories:
-  - - 杂谈
+  - - Linux
 date: 2022-11-25 19:12:33
 ---
 
@@ -14,7 +14,7 @@ date: 2022-11-25 19:12:33
 總所周知當我們使用mtr的時候  
 或者besttrace的時候，  
 
-![](https://cdn2.jioushan.top/LightPicture/2022/11/dc0810d41d145e4a.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/11/dc0810d41d145e4a.png)
 
 比方說這張
 
@@ -49,7 +49,7 @@ copy您的prefix至這類的反碼計算
 例如截圖  
   
 
-![](https://cdn2.jioushan.top/LightPicture/2022/11/cf1d1b0dbad3e3e9.png)
+![](https://cdn2.jsmsr.com/LightPicture/2022/11/cf1d1b0dbad3e3e9.png)
 
 #若您提交出現任何抱錯，請聯繫分配給您這個prefix管理者/控制者「以協助你將您的反碼修改至您的DNSserver
 

@@ -1,9 +1,9 @@
 ---
-title: 入手了一块Raspberry Pi 4B
+title: Raspberry Pi 4B
 tags: []
 id: '553'
 categories:
-  - - 杂谈
+  - - Linux
 date: 2019-09-01 17:28:14
 ---
 
