@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jioushan Blog</title>
+  
+  <subtitle>MaShiRo</subtitle>
+  <link href="https://www.jioushan.top/atom.xml" rel="self"/>
+  
+  <link href="https://www.jioushan.top/"/>
+  <updated>2024-11-11T18:24:31.000Z</updated>
+  <id>https://www.jioushan.top/</id>
+  
+  <author>
+    <name>Jioushan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Only DNS ipv6 Use</title>
+    <link href="https://www.jioushan.top/2024/11/01/%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BA%86%E6%88%91%E4%BB%AC%E7%9A%84%E5%86%85%E9%83%A8DNS/"/>
+    <id>https://www.jioushan.top/2024/11/01/%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BA%86%E6%88%91%E4%BB%AC%E7%9A%84%E5%86%85%E9%83%A8DNS/</id>
+    <published>2024-11-01T04:56:42.000Z</published>
+    <updated>2024-11-11T18:24:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>我们提供了我们的内部DNS</p><p>Only_IPV6 Use<br>您可以使用此DNS进行</p><p>我们的内部服务访问，以及适当的服务修正。</p><p>来满足我们不同的服务需求。</p><p>请指向我们的服务器<br><code>2602:f919:93c::1</code></p><p><code>2602:f919:939:9999::2</code></p><p>DoH&#x2F;DoT</p><p><a class="link"   href="https://dns.jsmsr.com:853/" >https://dns.jsmsr.com:853/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>DoT&#x2F;Doh 还在测试不保证可用性.</p><hr><p>我们于2024年&#x2F;11月起。中国大陆境内网络全部关闭。不在为中国大陆客户提供免费服务。<br>若您有其他业务需求，还望通过电邮的方式PM我。</p><hr><p>JSMSR Network @2024</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我们提供了我们的内部DNS&lt;/p&gt;
+&lt;p&gt;Only_IPV6 Use&lt;br&gt;您可以使用此DNS进行&lt;/p&gt;
+&lt;p&gt;我们的内部服务访问，以及适当的服务修正。&lt;/p&gt;
+&lt;p&gt;来满足我们不同的服务需求。&lt;/p&gt;
+&lt;p&gt;请指向我们的服务器&lt;br&gt;&lt;code&gt;2602:f919:93</summary>
+      
+    
+    
+    
+    <category term="Network" scheme="https://www.jioushan.top/categories/Network/"/>
+    
+    
+    <category term="Network" scheme="https://www.jioushan.top/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Note-写下这样的文字</title>
+    <link href="https://www.jioushan.top/2024/04/17/%E5%86%99%E4%B8%8B%E8%BF%99%E6%A0%B7%E7%9A%84%E6%96%87%E5%AD%97/"/>
+    <id>https://www.jioushan.top/2024/04/17/%E5%86%99%E4%B8%8B%E8%BF%99%E6%A0%B7%E7%9A%84%E6%96%87%E5%AD%97/</id>
+    <published>2024-04-17T09:30:42.000Z</published>
+    <updated>2024-04-17T02:40:50.421Z</updated>
+    
+    <content type="html"><![CDATA[<p>写下这样的文字，</p><p> 我的人生总是过着这样的生活，在我还是孩子未成年的时候 ，每天都想做那些成年人做的事情，关注的方向。学习的动力。</p><p>但这样很容易被母亲，老师，骂。又或是不被身边的人理解。</p><p>有的人坚信合适年龄做合适的事情，但我从不这么认为。</p><p>似乎不得不提早成熟的我，早早的踏上了心智成年化的样子。尽管曾经我也拼过，但几乎被身边人和母亲拉回来。（亦或者绊倒我）</p><p>我想过自己说了算自己握得住的人生，而不是被母亲所左右，所管控的样子。</p><hr><p>今年的我 本打算到处投简历找份实习工作，至少在暑假之前有份自己所擅长的工作的时候是这样的想法。</p><p>我趁着3月份到处投简历的阶段，或许是失败的很惨吧。</p><p>但,有些不太主动的我或,中意的岗位并不中意我。我不知道别人怎么想，但是我有我所追求,学习的方式。尽管传统的学习教育总是不断的阻挠我。</p><p>但我想 并非一切如此顺利，我真的很累，比起任何人我都需要适当的休息调整再出发。</p><hr><p>时间推移到去年我开始远程工作开始，似乎对于我，这样的方式.新鲜习惯而有无从下手。</p><p>但是项目是有限的，如果被砍单那基本上没的赚。自然而然要寻找新的工作。</p><hr><p>当我转向远程工作这个领域的时候，我发现天呐我想要从事的工作。似乎大家都如此厉害。</p><p>他&#x2F;她们年龄比我大，技能经验比我丰富。而我对他们来说 竞争力真的很弱。</p><p>我比任何人都想提高我的能力。但是这繁重一天又一天。留给我的时间不是很多，而且我似乎开始焦虑。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;写下这样的文字，&lt;/p&gt;
+&lt;p&gt; 我的人生总是过着这样的生活，在我还是孩子未成年的时候 ，每天都想做那些成年人做的事情，关注的方向。学习的动力。&lt;/p&gt;
+&lt;p&gt;但这样很容易被母亲，老师，骂。又或是不被身边的人理解。&lt;/p&gt;
+&lt;p&gt;有的人坚信合适年龄做合适的事情，但我从不这么</summary>
+      
+    
+    
+    
+    <category term="note" scheme="https://www.jioushan.top/categories/note/"/>
+    
+    
+    <category term="Note" scheme="https://www.jioushan.top/tags/Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Note-新出単語1</title>
+    <link href="https://www.jioushan.top/2024/04/15/%E6%96%B0%E5%87%BA%E5%96%AE%E8%A9%9E1/"/>
+    <id>https://www.jioushan.top/2024/04/15/%E6%96%B0%E5%87%BA%E5%96%AE%E8%A9%9E1/</id>
+    <published>2024-04-15T04:56:42.000Z</published>
+    <updated>2024-04-17T02:37:28.828Z</updated>
+    
+    <content type="html"><![CDATA[<p>故事是这样的，我最近被《5:20AM》这首歌洗脑了，而下面的单词便是遇到没有背过的单词一个笔记.</p><iframe src="//player.bilibili.com/player.html?aid=1902852888&bvid=BV1pm41167zW&cid=1500469943&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h2 id="新出単語1"><a href="#新出単語1" class="headerlink" title="新出単語1"></a>新出単語1</h2><p>溺れて　おぼれて</p><p>花柄　はながら</p><p>稲妻　いなずま</p><p>添えて　そえて</p><p>てを繋い　つない</p><p>蘇る　よみがえる　复活</p><p>香り　かおり</p><p>操る　あやつる　操作驾驶</p><p>逃れる　のがれる</p><p>ますます　　越来越 多多益善</p><p>黒くも　</p><p>記憶　きおく　</p><p>酔って　よって</p><p>透かす　すかす　透过</p><p>氷　こおり</p><p>死神　しにがみ</p><p>熱狂　ねっきょう</p><p>純粋　じゅんすい　纯粹</p><p>星座　せいざ</p><p>性　せい　</p><p>散らかす　弄的乱七八糟</p><p>灰色　はいいろ</p><p>地帯　ちたい　地區</p><p>散策　さんさく　散歩</p><p>仕草　しぐさ</p><p>六本木　ろっぽんぎ</p><p>台場　だいば</p><p>目黒　めぐろ</p><p>品川　しながわ</p><p>表参道　おもてさんどう</p><p>代官山　だいかんやま</p><p>恵比寿　えびす</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;故事是这样的，我最近被《5:20AM》这首歌洗脑了，而下面的单词便是遇到没有背过的单词一个笔记.&lt;/p&gt;
+&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=1902852888&amp;bvid=BV1pm41167zW&amp;cid=</summary>
+      
+    
+    
+    
+    <category term="note" scheme="https://www.jioushan.top/categories/note/"/>
+    
+    
+    <category term="Note" scheme="https://www.jioushan.top/tags/Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Note-新出単語2</title>
+    <link href="https://www.jioushan.top/2024/04/10/%E6%96%B0%E5%87%BA%E5%96%AE%E8%A9%9E2/"/>
+    <id>https://www.jioushan.top/2024/04/10/%E6%96%B0%E5%87%BA%E5%96%AE%E8%A9%9E2/</id>
+    <published>2024-04-10T04:56:42.000Z</published>
+    <updated>2024-04-17T02:39:34.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>故事只是朋友推荐给我的channel，而要准备考试所记录的一些词汇.</p><h1 id="新出単語2"><a href="#新出単語2" class="headerlink" title="新出単語2"></a>新出単語2</h1><p>しゅつじょうけん　出場権</p><p>ゆうしょう　優勝</p><p>なでしこ　なでしこ</p><p>ほんしょ　本書</p><p>きゅうはん　旧版</p><p>かんこう　刊行</p><p>かつやく　活躍</p><p>しょうちょう　象徴</p><p>きょうどう　共同</p><p>参画　さんかく</p><p>縛る　しばる</p><p>しんしゅつ　進出</p><p>めいめい　命名</p><p>ほうしょうきん　報奨金</p><p>けた　桁</p><p>えいよ　栄誉</p><p>かくさ　格差</p><p>かれん　可憐</p><p>しゅがん　主眼</p><p>のぞましい　望ましい</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;故事只是朋友推荐给我的channel，而要准备考试所记录的一些词汇.&lt;/p&gt;
+&lt;h1 id=&quot;新出単語2&quot;&gt;&lt;a href=&quot;#新出単語2&quot; class=&quot;headerlink&quot; title=&quot;新出単語2&quot;&gt;&lt;/a&gt;新出単語2&lt;/h1&gt;&lt;p&gt;しゅつじょうけん　出場権&lt;/p&gt;</summary>
+      
+    
+    
+    
+    <category term="note" scheme="https://www.jioushan.top/categories/note/"/>
+    
+    
+    <category term="Note" scheme="https://www.jioushan.top/tags/Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Note-3月份</title>
+    <link href="https://www.jioushan.top/2024/04/07/3%E6%9C%88%E4%BB%BD/"/>
+    <id>https://www.jioushan.top/2024/04/07/3%E6%9C%88%E4%BB%BD/</id>
+    <published>2024-04-07T04:56:42.000Z</published>
+    <updated>2024-04-17T02:32:35.973Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="3月份"><a href="#3月份" class="headerlink" title="3月份"></a>3月份</h2><p>当我打开typora时候,心想要写点什么好呢。</p><p>很久没写博文总结下最近的生活了。</p><h2 id="Note1"><a href="#Note1" class="headerlink" title="Note1."></a>Note1.</h2><p>今年，比任何人都需要时间,去做好要做的事情和等待我做的事情。</p><p>月初到处投简历去寻找工作。</p><p>时至如今，4月份我仍在到处寻找。不知有谁想捞一捞我。</p><h2 id="Note2"><a href="#Note2" class="headerlink" title="Note2."></a>Note2.</h2><p>我接待了来自日本的一伙友人。</p><p>和他们聊的还可以。但是当忙起来的时候便没空聊天了。</p><p>有一些很有趣的经历。不过我想 不急于当下分享。</p><h2 id="Note3"><a href="#Note3" class="headerlink" title="Note3."></a>Note3.</h2><p>参加了院级的 山口银行杯高年级组，即兴演讲。</p><p>嘛.基本上参与便有奖得。</p><h2 id="Note4"><a href="#Note4" class="headerlink" title="Note4."></a>Note4.</h2><p>4课补考依旧全挂.我完全不擅长应试考试。或许考不过有我考不过的样子吧。哪怕是第二次试卷依旧无法通过。</p><h2 id="Note5"><a href="#Note5" class="headerlink" title="Note5."></a>Note5.</h2><p>或许我没有讲,我去年N3差了三分。但是今年我又抢到了N2的考试，以及打算裸考的CET-4级，我心想我还在大学的时间不多了。为何不尝去考一下CET4级呢。</p><h2 id="Note6"><a href="#Note6" class="headerlink" title="Note6."></a>Note6.</h2><p>每天Duolinguo学习一点点的spanish.</p><p>So heard,i need relax.</p><h2 id="Note7"><a href="#Note7" class="headerlink" title="Note7."></a>Note7.</h2><p>Ingress游戏 山东 地区的瓜</p><p>以及我到lv9啦，等我到10级我就可以申po了。</p><h2 id="Note8"><a href="#Note8" class="headerlink" title="Note8."></a>Note8.</h2><p>写下这篇文章的时候,大抵我还在</p><p>了解Cloudfalre的wokers的cil  wrangler.toml这个文件不断较劲。</p><p>为什么这样写是错误的。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[build]</span><br><span class="line">  command = &quot;npm run build&quot;</span><br><span class="line">  upload = &quot;dist/*&quot;</span><br></pre></td></tr></table></figure></div><p>官方的文档是这样的，</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[build]</span><br><span class="line">command = &quot;npm run build&quot;</span><br><span class="line">cwd = &quot;build_cwd&quot;</span><br><span class="line">watch_dir = &quot;build_watch_dir&quot;</span><br></pre></td></tr></table></figure></div><p>所以我想知道为什么js不可以调用index.html真的让人很费解呢。</p><h2 id="Note-9"><a href="#Note-9" class="headerlink" title="Note.9"></a>Note.9</h2><p>顺带一提 其实我的生日在这个月，当然我认识一部分人也是这个月的生日。</p><p>自己给自己买束花送给自己吧。<br>喔，喜闻乐见的事情,或许每个生日一定会吵架.</p><p>阿哈。谢谢那些牵挂我的人的祝福。</p><h2 id="Note10"><a href="#Note10" class="headerlink" title="Note10."></a>Note10.</h2><p>我发现我真的很喜欢磕百合的糖</p><p>如果自己可以是女生，我也会爱上女孩子的吧。</p><p>但是看到女生的爱情我磕糖就好。未曾有加入破坏的想法。看着她们便让我很享受了。</p><p>喔对，推荐部一月的Anime喔。</p><p>Hazibn Hotel。中文译名大概叫 地狱旅店 吧。</p><p>在Amazon Prime上可以观看。你可以想想是成人版的迪士尼故事。笑</p><p>编剧貌似是Vivian.<br>看完之后真的想看Geel的感觉，音乐剧超棒。有什么问题及时行乐，勇敢的唱出跳起来。</p><p>很喜欢，画风和故事也很爱。</p><p>这个月我很推荐喔。还有夏利这对。So Nice！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;3月份&quot;&gt;&lt;a href=&quot;#3月份&quot; class=&quot;headerlink&quot; title=&quot;3月份&quot;&gt;&lt;/a&gt;3月份&lt;/h2&gt;&lt;p&gt;当我打开typora时候,心想要写点什么好呢。&lt;/p&gt;
+&lt;p&gt;很久没写博文总结下最近的生活了。&lt;/p&gt;
+&lt;h2 id=&quot;Note1&quot;</summary>
+      
+    
+    
+    
+    <category term="note" scheme="https://www.jioushan.top/categories/note/"/>
+    
+    
+    <category term="Note" scheme="https://www.jioushan.top/tags/Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2024年2月的小记</title>
+    <link href="https://www.jioushan.top/2024/02/19/2024%E5%B9%B42%E6%9C%88%E7%9A%84%E5%B0%8F%E8%AE%B0/"/>
+    <id>https://www.jioushan.top/2024/02/19/2024%E5%B9%B42%E6%9C%88%E7%9A%84%E5%B0%8F%E8%AE%B0/</id>
+    <published>2024-02-19T07:40:00.000Z</published>
+    <updated>2024-02-19T07:42:58.608Z</updated>
+    
+    <content type="html"><![CDATA[<p>#一个长草的Blog记起更新了。</p><h2 id="Note1"><a href="#Note1" class="headerlink" title="Note1."></a>Note1.</h2><p>今年1月份的时候 我不再使用<a href="https://wordpress.org/download/">wordpress</a>.转而使用<a href="https://hexo.io/docs/">Hexo</a>.</p><p>这就出现了一些问题,</p><h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>1.曾经的评论，数据库被我留下来了。</p><p>但是肯定无法再应用到这边的Hexo上面。</p><h3 id="框架更迭"><a href="#框架更迭" class="headerlink" title="框架更迭"></a>框架更迭</h3><p>使用Hexo似乎担心的不再是文字丢失，担心的是主题作者跑路，前端渲染的资源不再可用。<br>同时这也加快了使用体验。我最终不再使用php作为网站的主要语言。另一个角度对于建站服务器的压力可以小很多倍。</p><p>回想起过去使用Wordpress的体验，php的7.3一些主题作者本身对于php8以上的版本未能支持，Wordpress官方大框架都跟着变动，使得一些wp的主题频出bug，加上使用习惯，我们魔改了替换了资源之后，却无心维护，长久以来js的丢失,资源的替换。插件网络问题,等等各种恼火的问题。</p><h3 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h3><p>好吧，这次我导出了xml变更成markdown,加上我自己本身之前利用gitbook将我之前的文字也变成了markdown。当熟悉这样的文本。其实麻烦的不再是使用wp的框架烦恼。<strong>而是写什么，什么时候写，何时可以发布。</strong></p><p>友链似乎，我不再主动和别人交换友链，似乎之前生草的时候，一些人也把我的友链删掉了。这无妨。友链也变成了单链 了噗…..<br>当然不是说我不再交换友链，只是这个界面去<a href="https://blog.jsmsr.com/firend">这里</a>了。</p><h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><p>事实上Rss问题是有解决方案的，只不过我懒了，先咕咕咕着吧。</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>我不再担心,哪些利用wp或者php的漏洞来攻击servers从而影响我的那些重复小轮子.</p><p>微薄的钱包和性能弱鸡的服务。事实上,自从使用这类静态前端,网站整体访问也变流畅了.wp的设计注定难以做到如此体验。但却是这么多年适合小白建站的好框架。</p><h2 id="Note2"><a href="#Note2" class="headerlink" title="Note2."></a>Note2.</h2><p>这是我继农历新年后,长草好久第一次更新Blog.</p><p>我是个比较被动社交的一个人，基本上就是长年一个人呆着。所以认识的朋友基本上一双手数得过来，但是这不代表我不喜欢去结交那些新朋友的。</p><h3 id="ingress"><a href="#ingress" class="headerlink" title="ingress"></a>ingress</h3><p>我发现每个月第一个周六 国内基本上每个省份的城市都会举办<a href="https://www.ingress.com/">ingress</a>.<br>我还是这个游戏的新手，刚好不容易自己升上8级。（其实是7级半，后面那段经验值，我回到家属实很无聊，自己reg了一个R小号帮我E刷上8lv。然后被它们蓝军发现了…）<br>如果你问我这是一个什么游戏，我会告诉你多出去走走。是一个虚拟现实结合的游戏。</p><p>在这个世界，有很多portal（po）你可以占领这些据点。你在游戏中选R（蓝）or E（绿）作为一名特工活跃在你的生活中。如果你在生活中</p><p>听说他们R喜欢约饭。南方喜欢打对抗。记得制作<a href="https://community.ingress.com/en/discussion/21988/biocard-templates">BioCard</a>交换喔。（我参加</p><p>我还是一个萌新,参加这样的活动出去走走，可以认识一些dalao,抑或是一些朋友。</p><p>当你到一个城市不知道做些什么好，打开你的ingress找找那些任务，一路city work把那些po hack（入侵）一遍，得到一些牌子。成就感就有了。<br>你看，穷人也有穷游的方法。（2333333</p><h3 id="健走"><a href="#健走" class="headerlink" title="健走"></a>健走</h3><p>我在学校的时候，（因为是第二监狱）每天晚上下了普训（笑死 新闻联播这种每当我说出这种事情的存在，我严重怀疑我真的不应该是大学生，身边的朋友他们才是和我过去一样那才是大学。关于某某市第二监狱这件事,我们可以以后谈这件事。）每天晚自习都有普训这种奇葩存在，不止让你看还让你抄新闻，唉！<br>每当每天晚上结束这件事，我做的就是背起书包，带上耳机。开启降噪。放起音乐。<br>健走一个人从教学楼到寝室。</p><p>我愿称之为这是我一天有趣的事情之一。（呜呜，没有疫情 还要封校的大学也就某某市第二监狱这种为数不多的奇葩）</p><h3 id="音乐和图片"><a href="#音乐和图片" class="headerlink" title="音乐和图片"></a>音乐和图片</h3><p>从去年写博文的时候，我就打算。在我的博文放一张图片。然后结尾或者顶部放一首歌曲分享。<br>我会试着这样做的。</p><p><img src="https://cdn.jioushan.top/photo/110.jpg"></p><p>顺便让我之前部署的轮子也跑一跑,图片驱动于Cloudflare到我的网络-servers. </p><p><del>由于我在今年管局锁紧政策,于是我懒得折腾干脆对域名的备案就撤销了。</del></p><p>干脆砍掉一些服务，和优化一些之前剩下的服务。</p><h2 id="Note3"><a href="#Note3" class="headerlink" title="Note3."></a>Note3.</h2><h3 id="Esim"><a href="#Esim" class="headerlink" title="Esim"></a>Esim</h3><p>关于我在Apple music（那5元学生价）走向了Spotify.</p><p>可能我没怎么提过，关于music流媒体订阅的选择。</p><p>而当下的spotify的<strong>菲律宾</strong>区无疑是一个不错的选择。</p><p>因为我搞不定土区的付款方式。Spotify的付款方式要本土国家的支付卡。<br>但是还有一招便是手机卡话费支付。</p><p>快速拥有php的手机卡方式,我想是Smart这家。99比索Esim,漫游在大陆,充话费用来支付Spotify的账单。我觉得是个不错的选择。</p><p>友情提示,我在注册这家服务的时候,碰巧它们锁紧了实名政策。网传猴子过KYC的方法已经不适用了喔.</p><p>你不想KYC的话我建议你可以不考虑.不过他的保号成本真的太低了.四舍五入&#x3D;无。</p><p>你可能需要准备去php的机票以及银行流水账单加上你的passport（诶！！为什么打passport我的手打成了password，太怪了2333333）</p><h3 id="感冒"><a href="#感冒" class="headerlink" title="感冒"></a>感冒</h3><p>在打这些文字的时候，我的感冒还未痊愈。头疼,嗓子疼.</p><p>希望大家不要中招哇.虽然不是很遭罪。但是我记得第一晚那天晚上,我身上骨头缝好痛。</p><p>因为在第二监狱的环境,每天都让我的身体难以吃消.要不是只有2年的学制.我才熬过半年.</p><p>我的尾椎骨 在过度劳累阶段下 好痛，避免久坐喔,多站起来活动活动.<br>身体才是健康的第一位.</p><h3 id="结尾的Music"><a href="#结尾的Music" class="headerlink" title="结尾的Music"></a>结尾的Music</h3><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/24TQIQpKJWp4isMbulvifs?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><p>希望有朝一日可以掌握网络安全,致敬那个清华 Blue-Lotus。<br>如果有CTF大佬带带我这只小菜鸡.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#一个长草的Blog记起更新了。&lt;/p&gt;
+&lt;h2 id=&quot;Note1&quot;&gt;&lt;a href=&quot;#Note1&quot; class=&quot;headerlink&quot; title=&quot;Note1.&quot;&gt;&lt;/a&gt;Note1.&lt;/h2&gt;&lt;p&gt;今年1月份的时候 我不再使用&lt;a href=&quot;https://w</summary>
+      
+    
+    
+    
+    <category term="note" scheme="https://www.jioushan.top/categories/note/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jioushan.top/2024/01/16/%E6%9C%AA%E7%84%B6%E5%BD%A2%E8%AE%8A%E5%BD%A2-%E5%8B%95%E8%A9%9Eu-gu-su-tsu-nu/"/>
+    <id>https://www.jioushan.top/2024/01/16/%E6%9C%AA%E7%84%B6%E5%BD%A2%E8%AE%8A%E5%BD%A2-%E5%8B%95%E8%A9%9Eu-gu-su-tsu-nu/</id>
+    <published>2024-01-16T15:11:14.595Z</published>
+    <updated>2024-01-16T15:11:14.596Z</updated>
+    
+    <content type="html"><![CDATA[<p>合わない</p><p>行わない</p><p>買わない</p><p>かまわない</p><p>通わない</p><p>誘わない</p><p>出会わない</p><p>手伝わない</p><p>似合わない</p><p>払わない</p><p>拾わない</p><p>間違わない</p><p>間に合わない</p><p>向かわない</p><p>もらわない</p><p>笑わない</p><p>ーーーーーーーーー</p><p>開かない</p><p>動かない</p><p>驚かない</p><p>片付かない</p><p>乾かない</p><p>渇かない</p><p>気づかない</p><p>空かない</p><p>付かない</p><p>続かない</p><p>泣かない</p><p>開かない</p><p>焼かない</p><p>沸かない</p><p>急がない</p><p>騒がない</p><p>ーーーーー</p><p>移さない</p><p>起こさない</p><p>落とさない</p><p>思い出さない</p><p>暮らさない</p><p>壊さない</p><p>指さない</p><p>足さない</p><p>直さない</p><p>引っ越さない</p><p>犯さない</p><p>ーーーーーー</p><p>打たない</p><p>勝たない</p><p>立たない</p><p>役立たない</p><p>選ばない</p><p>叫ばない</p><p>運ばない</p><p>喜ばない</p><p>ーーーーーー</p><p>噛まない</p><p>混まない</p><p>進まない</p><p>済まない</p><p>楽しまない</p><p>包まない</p><p>盗まない</p><p>踏まない</p><p>止まない</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;合わない&lt;/p&gt;
+&lt;p&gt;行わない&lt;/p&gt;
+&lt;p&gt;買わない&lt;/p&gt;
+&lt;p&gt;かまわない&lt;/p&gt;
+&lt;p&gt;通わない&lt;/p&gt;
+&lt;p&gt;誘わない&lt;/p&gt;
+&lt;p&gt;出会わない&lt;/p&gt;
+&lt;p&gt;手伝わない&lt;/p&gt;
+&lt;p&gt;似合わない&lt;/p&gt;
+&lt;p&gt;払わない&lt;/p&gt;
+&lt;p&gt;拾わない&lt;/p&gt;
+&lt;p&gt;間</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jioushan.top/2024/01/16/%E4%B8%80%E5%80%8B%E4%BA%BA%E7%9C%8B%E9%9B%BB%E5%BD%B1/"/>
+    <id>https://www.jioushan.top/2024/01/16/%E4%B8%80%E5%80%8B%E4%BA%BA%E7%9C%8B%E9%9B%BB%E5%BD%B1/</id>
+    <published>2024-01-16T15:11:14.593Z</published>
+    <updated>2024-01-16T15:11:14.593Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一個人看電影"><a href="#一個人看電影" class="headerlink" title="一個人看電影"></a>一個人看電影</h1><p>uhmm，這次許久沒更新不是什麼重要的技術博文，大概只是分享一些自己的想法吧。</p><p>今晚，再度一個人去看電影。放下手中的工作，擠出時間 出門去看場電影。 我得說 我逐漸 開始慢慢喜歡上這種感覺。只是很少有對味的片。 </p><p>uhmm 近幾年網路的便利，讓follow的 有在Netflix（流媒體）看完。 </p><p>我是一個能容忍孤獨的人，但是時常 自我對話久了，會讓人覺得活在自己的世界（曾經 的確是這樣的）。 但是這不是很需要，安全感要在別人索取。儘管有時候 我也很希望交友。</p><p>但是 或許口味 獨特，價值觀 取向相似性少。</p><p> 安安靜靜在一個環境裡當好一個小透明就好了。 </p><p>我看著一本本買來有幾年的 書，學習或者 讀（啃的很慢）時常 讀幾篇便困的 想要貪睡一陣。</p><p> 但是閱讀中文便不會，熟練掌握 使用 外語 或許這是終身的一個興趣之一啦。 </p><p>的一年中 我又在做什麼呢？未必每件事情要有意義，有自己的感受且舒適即可。減少外在的焦慮，外在的敏感。</p><p> 嗯 這回大概便是自己在自己Blog亂吐糟自己的時候，而放在這裡是明確之舉嗎？ </p><p>沒有穩定工作，（也不一定要追求穩定（x 放慢腳步，感受生活（大概是賴床和空想 白日夢？</p><p>hhhhh 雖然也會實幹一些，但是需要時間一點點腳印積累方可見到步子的跨越。</p><p> 燒酒對我來說 微醉，尚可。</p><p>暈乎乎 有些理智，然後 放鬆敏感的自己。坦承的面對自己，不在乎哪些一切。</p><p> 不是很喜歡喝啤酒，只是為了氣氛或者交集場合，一肚子的氣體讓自己不舒服。</p><p> 至於一些甜度的雞尾酒，調製酒，uhmm。當他是一種氣體飲料好了。 </p><p>至於白酒 uhmm，可能還是燒酒更讓我有感覺吧。 </p><p>酸甜，但是不喜辣的割嗓子，更沒有引工業酒精打算。 </p><p>麻是一種很有趣的感覺，放大神經的每一個凸點。</p><p>感受 所感受。 長年緊繃壓抑的環境下一種釋放。 </p><p>似乎talk show也是一個想法，一直以來 我都想 去看一場show。自己去聽&#x2F;互動。</p><p> 希望這個目標會有希望在近年成功。 今晚先這樣吧，我在考慮 這裡的評論區用什麼做好呢？</p><p>我有試著重構一個非gitbook的版本的blog但是。</p><p>我不確定是否要啟用。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一個人看電影&quot;&gt;&lt;a href=&quot;#一個人看電影&quot; class=&quot;headerlink&quot; title=&quot;一個人看電影&quot;&gt;&lt;/a&gt;一個人看電影&lt;/h1&gt;&lt;p&gt;uhmm，這次許久沒更新不是什麼重要的技術博文，大概只是分享一些自己的想法吧。&lt;/p&gt;
+&lt;p&gt;今晚，再度一個</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Note記述-2024</title>
+    <link href="https://www.jioushan.top/2024/01/08/2024-year/"/>
+    <id>https://www.jioushan.top/2024/01/08/2024-year/</id>
+    <published>2024-01-07T17:44:39.000Z</published>
+    <updated>2024-02-12T16:37:42.348Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2024-year"><a href="#2024-year" class="headerlink" title="2024 year"></a>2024 year</h1><h2 id="Note1"><a href="#Note1" class="headerlink" title="Note1:"></a>Note1:</h2><p>2024年 跨年清晨我和 舍友去了海邊。他拍下來這樣的照片。</p><figure><img                       lazyload                     src="/images/loading.svg"                     data-src="../.gitbook/assets/1906b71287bfd78cc1178906788e0c89.JPG"                      alt=""                ><figcaption></figcaption></figure><p>很難想像Iphone可以拍出這樣的照片。如同廣告一樣</p><h3 id="Note2"><a href="#Note2" class="headerlink" title="Note2:"></a>Note2:</h3><p>我參加了Ingress 青島的線下活動。他們都是Dalao，而我太Newbird了。「IFS」</p><p>不過這樣的活動真的很有趣，如果有機會可以請假出來。每個月都想去<a class="link"   href="https://fevgames.net/ifs/event/?e=26477" >參加 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>呢！</p><h3 id="Note3-考試-Or-Talk"><a href="#Note3-考試-Or-Talk" class="headerlink" title="Note3:  考試 Or Talk"></a>Note3:  考試 Or Talk</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2024-year&quot;&gt;&lt;a href=&quot;#2024-year&quot; class=&quot;headerlink&quot; title=&quot;2024 year&quot;&gt;&lt;/a&gt;2024 year&lt;/h1&gt;&lt;h2 id=&quot;Note1&quot;&gt;&lt;a href=&quot;#Note1&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="杂谈" scheme="https://www.jioushan.top/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Gentoo入门指北</title>
+    <link href="https://www.jioushan.top/2023/06/30/%E4%B8%8D%E5%AE%8C%E6%95%B4%E7%9A%84Gentoo%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/"/>
+    <id>https://www.jioushan.top/2023/06/30/%E4%B8%8D%E5%AE%8C%E6%95%B4%E7%9A%84Gentoo%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/</id>
+    <published>2023-06-29T18:44:39.000Z</published>
+    <updated>2024-01-16T18:34:40.780Z</updated>
+    
+    <content type="html"><![CDATA[<p>description: 一些疑難雜症，希望可以幫到</p><hr><h1 id="不完整的Gentoo安裝"><a href="#不完整的Gentoo安裝" class="headerlink" title="不完整的Gentoo安裝"></a>不完整的Gentoo安裝</h1><p><code>不過我建議你應當滿足/準備以下</code></p><p><code>1.強大的內心</code></p><p><code>2.一塊U盤和你要安裝的</code>磁碟</p><p><code>3.獨立思考的大腦</code></p><p><code>4.不厭其煩的嘗試</code></p><p><code>5.</code><a href="https://chat.openai.com/"><code>chatgpt</code></a> <code>&amp; Google &amp; 官網文檔</code></p><h2 id="開始"><a href="#開始" class="headerlink" title="開始"></a>開始</h2><p>！！！<code>systemctl</code> ⚠️</p><p>前半部分是在<code>live CD</code> 狀態下操作的，我這裡就不執行分割了，分割工具有像<code>cfdisk</code>，<code>fdisk</code></p><p>分割 建議了解下 <code>MBR</code>分割表 和<code>GUID</code> 分割表區別，我覺得你都是<code>Linux</code>用戶了，您應該很上手。</p><p><code>liveCD</code> 環境下</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/gentoo</span><br></pre></td></tr></table></figure></div><p>創建 &#x2F;mnt&#x2F;gentoo</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/gentoo/boot</span><br></pre></td></tr></table></figure></div><p>創建 &#x2F;mnt&#x2F;gentoo&#x2F;boot</p><p>通過<code>lsblk</code> 看到我這邊 對sda已經操作完成 分割完成。</p><p>sda1 用作 boot ，sda2 用作操作系統路徑</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@archiso ~ # lsblk</span><br><span class="line">NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS</span><br><span class="line">loop0    7:0    0 693.5M  1 loop /run/archiso/airootfs</span><br><span class="line">sda      8:0    0 119.2G  0 disk </span><br><span class="line">├─sda1   8:1    0   256M  0 part </span><br><span class="line">└─sda2   8:2    0   119G  0 part </span><br><span class="line">sdb      8:16   1  28.8G  0 disk </span><br><span class="line">├─sdb1   8:17   1   798M  0 part </span><br><span class="line">└─sdb2   8:18   1    15M  0 part </span><br><span class="line">sr0     11:0    1  1024M  0 rom </span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.vfat -F 32 /dev/sda1</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/sda2</span><br></pre></td></tr></table></figure></div><p>我怕你看不懂，我這裡簡單說下，sda是我要用來存放gentoo的硬盤</p><p>sda1用作boot 給了256M，sda2 是系統路徑</p><h3 id="格式化-磁碟"><a href="#格式化-磁碟" class="headerlink" title="格式化 磁碟"></a>格式化 磁碟</h3><p>然後我們通過mount 讓sda掛載到這個系統上。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sda2 /mnt/gentoo</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sda1 /mnt/gentoo/boot</span><br></pre></td></tr></table></figure></div><h3 id="stage3-配置"><a href="#stage3-配置" class="headerlink" title="stage3 配置"></a>stage3 配置</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.ustc.edu.cn/gentoo/releases/amd64/autobuilds/current-stage3-amd64-desktop-systemd/stage3-amd64-desktop-systemd-20230507T164658Z.tar.xz</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xpvf stage3 &lt;tab&gt; --xattrs-include=&#x27;*.*&#x27; --numeric-owner</span><br></pre></td></tr></table></figure></div><p>解壓完之後 配置make的conf</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /mnt/gentoo/etc/portage/make.conf</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">COMMON_FLAGS=&quot;-march=native -O3 -pipe&quot;</span><br><span class="line">CFLAGS=&quot;$&#123;COMMON_FLAGS&#125;&quot;</span><br><span class="line">CXXFLAGS=&quot;$&#123;COMMON_FLAGS&#125;&quot;</span><br><span class="line">FCFLAGS=&quot;$&#123;COMMON_FLAGS&#125;&quot;</span><br><span class="line">FFLAGS=&quot;$&#123;COMMON_FLAGS&#125;&quot;</span><br><span class="line">​</span><br><span class="line"># NOTE: This stage was built with the bindist Use flag enabled</span><br><span class="line">​</span><br><span class="line"># This sets the language of build output to English.</span><br><span class="line"># Please keep this setting intact when reporting bugs.</span><br><span class="line">LC_MESSAGES=C</span><br><span class="line">​</span><br><span class="line">USE=&quot;-bindist&quot;</span><br><span class="line">GENTOO_MIRRORS=&quot;https://mirrors.ustc.edu.cn/gentoo/&quot;</span><br><span class="line">ACCEPT_LECENSE=&quot;*&quot;</span><br><span class="line">MAKEOPTS=&quot;-j4&quot;</span><br></pre></td></tr></table></figure></div><h3 id="然後創建源"><a href="#然後創建源" class="headerlink" title="然後創建源"></a>然後創建源</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir --parents /mnt/gentoo/etc/portage/repos.conf</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /mnt/gentoo/etc/portage/repos.conf/gentoo.conf</span><br></pre></td></tr></table></figure></div><h3 id="复制DNS信息"><a href="#复制DNS信息" class="headerlink" title="复制DNS信息 "></a>复制DNS信息 <a href="#fu-zhi-dns-xin-xi" id="fu-zhi-dns-xin-xi"></a></h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp --dereference /etc/resolv.conf /mnt/gentoo/etc/</span><br></pre></td></tr></table></figure></div><p>複製live CD 下的dns到 掛在gentoo下的dns 文件<code>/etc/resolv.conf</code> 這個文件一般都是DNS配置</p><h3 id="挂载必要的文件系统"><a href="#挂载必要的文件系统" class="headerlink" title="挂载必要的文件系统"></a>挂载必要的文件系统</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mount --types proc /proc /mnt/gentoo/proc</span><br><span class="line">mount --rbind /sys /mnt/gentoo/sys</span><br><span class="line">mount --make-rslave /mnt/gentoo/sys</span><br><span class="line">mount --rbind /dev /mnt/gentoo/dev</span><br><span class="line">mount --make-rslave /mnt/gentoo/dev</span><br><span class="line">mount --bind /run /mnt/gentoo/run</span><br><span class="line">mount --make-slave /mnt/gentoo/run</span><br></pre></td></tr></table></figure></div><p>其中带有 –make-rslave的项目是使用systemd才需要的,如果你使用openrc可以不用运行.</p><p>如果你不使用Gentoo的livecd的话,需要运行下面的命令让&#x2F;dev&#x2F;shm&#x2F;目录称为一个正常挂载的tmpfs</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test -L /dev/shm &amp;&amp; rm /dev/shm &amp;&amp; mkdir /dev/shm</span><br><span class="line">mount --types tmpfs --options nosuid,nodev,noexec shm /dev/shm</span><br><span class="line">chmod 1777 /dev/shm /run/shm #如果报错，则去掉 /run/shm部分</span><br></pre></td></tr></table></figure></div><p>感謝這裡一小部分教程來自<a class="link"   href="https://gtrush.com/2022/06/12/%E6%96%B0%E6%89%8BGentoo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%951-%E5%AE%89%E8%A3%85%E7%AF%87-%E4%BA%8C%E8%BF%9B%E5%88%B6kernel%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/" >ta <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p><h3 id="進入chroot"><a href="#進入chroot" class="headerlink" title="進入chroot"></a>進入chroot</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chroot /mnt/gentoo /bin/bash</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PS1=&quot;(chroot) $&#123;PS1&#125;&quot;</span><br></pre></td></tr></table></figure></div><p>如果遇到bash無法操控命令時</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/root/bin</span><br></pre></td></tr></table></figure></div><p>讓我痛苦萬分的portage（包管理器）</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/portage/make.conf //make的路徑</span><br></pre></td></tr></table></figure></div><h3 id="編輯-make-配置"><a href="#編輯-make-配置" class="headerlink" title="編輯 make 配置"></a>編輯 make 配置</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf /var/db/repos/gentoo //如果出現問題再刪除重試</span><br></pre></td></tr></table></figure></div><p>刪除已經配置的，再一次嘗試</p><p>以下是正常的配置順序</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge-webrsync  //如果這裡執行出現報錯，請參考上面make的路徑進行參數修改</span><br></pre></td></tr></table></figure></div><p>具體參數可以參考它的make配置參數 <a class="link"   href="https://blog.yangmame.org/Gentoo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html" >URL <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>繼續按步驟執行命令</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eselect profile list</span><br></pre></td></tr></table></figure></div><p>這裡你要選擇一個合適你的 list</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eselect profile set X</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge -auvDN --with-bdeps=y @world</span><br></pre></td></tr></table></figure></div><p>&#x2F;&#x2F;執行這條命令時 ，你應該準備 出門&#x2F;開始看電影，或者躺平，或者有一顆強大的心臟，具體時間看您的機器配置，它讓我煎熬的坐了3個小時。</p><p>如果遇到什麼奇奇怪怪的報錯，善用搜索引擎，不過我想搜索引擎也不一定幫的上，善用GPT</p><h3 id="配置時間和地区"><a href="#配置時間和地区" class="headerlink" title="配置時間和地区 "></a>配置時間和地区 <a href="#pei-zhi-shi-qu-he-di-qu-xin-xi" id="pei-zhi-shi-qu-he-di-qu-xin-xi"></a></h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Asia/Hong_Kong&quot; &gt; /etc/timezone</span><br><span class="line">emerge --config sys-libs/timezone-data</span><br><span class="line">echo &quot;en_US.UTF-8 UTF-8 zh_CN.UTF-8 UTF-8&quot; &gt;&gt; /etc/locale.gen</span><br><span class="line">locale-gen</span><br></pre></td></tr></table></figure></div><p>选择语言,選eng出錯少</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eselect locale list</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eselect locale set X </span><br></pre></td></tr></table></figure></div><p>同步环境</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">. /etc/profile</span><br></pre></td></tr></table></figure></div><p>重新加载环境</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">env-update &amp;&amp; source /etc/profile &amp;&amp; export PS1=&quot;(chroot) $&#123;PS1&#125;&quot;</span><br></pre></td></tr></table></figure></div><h3 id="內核安裝"><a href="#內核安裝" class="headerlink" title="內核安裝"></a>內核安裝</h3><p>這裡官方寫的好複雜，不過感覺可以嘗試通過2進制的方式安裝。建議參考其他大佬教程這一步，這裡我沒有任何話語權，這裡時間應該不會浪費很久。</p><p>跟著官方教程走即可，接下是創建root的passwd</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd</span><br></pre></td></tr></table></figure></div><p>務必創建一個複雜的密碼保障安全。</p><h3 id="接下來是fstab"><a href="#接下來是fstab" class="headerlink" title="接下來是fstab"></a>接下來是fstab</h3><p>我的建議是<code>exit</code> 先退出chroot模式，直接複製<code>liveCD</code>下的fstab到gentoo這邊的路徑</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;/etc/fstab&quot; &gt;&gt; /mnt/gentoo/etc/fstab</span><br></pre></td></tr></table></figure></div><p>然後再使用上面的 進入chroot模式回到我們的最後步驟</p><h4 id="安裝配置grub引導"><a href="#安裝配置grub引導" class="headerlink" title="安裝配置grub引導"></a>安裝配置grub引導</h4><p>如果你在前面編輯make.conf的時候沒有添加這個參數，請將這個<code>GRUB_PLATFORMS=&quot;efi-64&quot;</code>參數放進去</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;GRUB_PLATFORMS=&quot;efi-64&quot;&#x27; &gt;&gt; /etc/portage/make.conf</span><br></pre></td></tr></table></figure></div><p>然後執行編譯安裝grub</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge --ask --update --newuse --verbose sys-boot/grub</span><br></pre></td></tr></table></figure></div><p>然後你可以執行這句話寫入boot</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot</span><br></pre></td></tr></table></figure></div><p>⚠️這裡僅使用uefi的引導方式，如果妳是其他的分區表或者傳統引導，建議參考<a class="link"   href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Bootloader/zh-cn" >官方文檔 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h2 id="最終"><a href="#最終" class="headerlink" title="最終"></a>最終</h2><p>退出chroot环境并unmount全部已持载分区。然后敲入一条有魔力的命令来初始化最终的、真实的测试：reboot。</p><p><code>root# exit</code></p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount -l /mnt/gentoo/dev&#123;/shm,/pts,&#125;</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount -R /mnt/gentoo</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></div><p>退出，并取消掛載，重啟，至此，如果順利的話 我們不再用到liveCD。</p><h2 id="進入系統後"><a href="#進入系統後" class="headerlink" title="進入系統後"></a>進入系統後</h2><h3 id="包管理器install-dhcpcd"><a href="#包管理器install-dhcpcd" class="headerlink" title="包管理器install dhcpcd"></a>包管理器install dhcpcd</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge -av dhcpcd</span><br></pre></td></tr></table></figure></div><h4 id="安裝vim"><a href="#安裝vim" class="headerlink" title="安裝vim"></a>安裝vim</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge --ask app-editors/vim</span><br></pre></td></tr></table></figure></div><h4 id="庫搜索mtr"><a href="#庫搜索mtr" class="headerlink" title="庫搜索mtr"></a>庫搜索mtr</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge --search mtr</span><br></pre></td></tr></table></figure></div><h3 id="amp-x20-vim裝不上報錯"><a href="#amp-x20-vim裝不上報錯" class="headerlink" title="&amp;#x20;vim裝不上報錯"></a>&amp;#x20;vim裝不上報錯</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Total: 10 packages (10 new), Size of downloads: 28,500 KiB</span><br><span class="line">​</span><br><span class="line"> * Error: circular dependencies:</span><br><span class="line">​</span><br><span class="line">(media-libs/libsndfile-1.2.0:0/0::gentoo, ebuild scheduled for merge) depends on</span><br><span class="line"> (media-sound/mpg123-1.31.3:0/0::gentoo, ebuild scheduled for merge) (buildtime_slot_op)</span><br><span class="line">  (media-sound/pulseaudio-16.1:0/0::gentoo, ebuild scheduled for merge) (buildtime)</span><br><span class="line">   (media-libs/libpulse-16.1-r2:0/0::gentoo, ebuild scheduled for merge) (buildtime)</span><br><span class="line">    (media-libs/libsndfile-1.2.0:0/0::gentoo, ebuild scheduled for merge) (buildtime)</span><br><span class="line">​</span><br><span class="line">It might be possible to break this cycle</span><br><span class="line">by applying any of the following changes:</span><br><span class="line">- media-libs/libsndfile-1.2.0 (Change USE: +minimal)</span><br><span class="line">- media-sound/mpg123-1.31.3 (Change USE: -pulseaudio)</span><br><span class="line">​</span><br><span class="line">Note that this change can be reverted, once the package has been installed.</span><br><span class="line">​</span><br><span class="line">Note that the dependency graph contains a lot of cycles.</span><br><span class="line">Several changes might be required to resolve all cycles.</span><br><span class="line">Temporarily changing some use flag for all packages might be the better option.</span><br></pre></td></tr></table></figure></div><h4 id="chatgpt的有效解決方案"><a href="#chatgpt的有效解決方案" class="headerlink" title="chatgpt的有效解決方案"></a>chatgpt的有效解決方案</h4><p>這個報錯顯示了 “media-libs&#x2F;libsndfile-1.2.0” 和 “media-sound&#x2F;mpg123-1.31.3” 之間存在循環依賴關係，其中 “media-sound&#x2F;pulseaudio-16.1” 和 “media-libs&#x2F;libpulse-16.1-r2” 也被列入了其中。</p><p>報錯提供了一些可能的解決方案，其中一種方法是通過更改 USE 標誌來打破這個循環依賴關係。在這種情況下，你可以嘗試使用以下命令：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">USE=&quot;-pulseaudio&quot; emerge -1 media-sound/mpg123</span><br><span class="line">​</span><br><span class="line">USE=&quot;+minimal&quot; emerge -1 media-libs/libsndfile</span><br><span class="line">​</span><br><span class="line">emerge vim</span><br></pre></td></tr></table></figure></div><p>這些命令將首先安裝更新 “media-sound&#x2F;mpg123” 和 “media-libs&#x2F;libsndfile” 軟件包，通過在安裝時更改它們的 USE 標誌來打破循環依賴關係。然後，你可以使用 emerge 命令安裝 vim 軟件包。</p><p>請注意，在成功安裝 vim 之後，你可以使用以下命令恢復 USE 標誌的原始設置：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USE=&quot;pulseaudio minimal&quot; emerge -1 media-sound/mpg123 media-libs/libsndfile</span><br></pre></td></tr></table></figure></div><p>這將更改 USE 標誌以恢復原始設置，同時更新這兩個軟件包，這樣你就可以在不更改系統狀態的情況下重新安裝它們。</p><h3 id="添加部分驅動（先解鎖許可證"><a href="#添加部分驅動（先解鎖許可證" class="headerlink" title="添加部分驅動（先解鎖許可證"></a>添加部分驅動（先解鎖許可證</h3><p>这个错误提示说明 <code>sys-kernel/linux-firmware</code> 软件包的所有可用版本都被掩藏了，原因是这个软件包包含了需要满足 <code>linux-fw-redistributable</code> 许可证的文件，但这个许可证并没有被 Gentoo 批准。</p><p>有两种解决方法：</p><ol><li><p>使用其他发行版的 firmware 或者从其他地方获取到该许可证文件。这种方法需要自己手动获取并安装，不保证能够成功，同时也存在风险。</p></li><li><p>在 <code>/etc/portage/package.license</code> 文件中添加 <code>linux-fw-redistributable</code> 许可证，这个许可证可以在 <code>/var/db/repos/gentoo/licenses/linux-fw-redistributable</code> 文件中找到。具体做法是，在终端中执行以下命令：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bashCopy code</span><br><span class="line">echo &quot;sys-kernel/linux-firmware linux-fw-redistributable&quot; &gt;&gt; /etc/portage/package.license</span><br></pre></td></tr></table></figure></div><p>然后再重新执行安装命令。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emerge -av sys-kernel/linux-firmware</span><br></pre></td></tr></table></figure></div><p>注意：这个许可证的存在是为了防止某些二进制固件被非法复制和分发，因此在添加许可证之前请仔细阅读许可证内容并确保您的使用方式</p><p>是合法的。</p></li></ol><h3 id="检查-iwlwifi-驱动程序是否已经加载。运行以下命令："><a href="#检查-iwlwifi-驱动程序是否已经加载。运行以下命令：" class="headerlink" title="检查 iwlwifi 驱动程序是否已经加载。运行以下命令："></a>检查 iwlwifi 驱动程序是否已经加载。运行以下命令：</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep iwlwifi</span><br></pre></td></tr></table></figure></div><p><code>lspci -k</code>查看Wi-Fi 驅動能否被識別</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wpa_passphrase YOUR_SSID YOUR_WIFI_PASSWORD &gt; /etc/wpa_supplicant/wpa_supplicant.conf</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dhclient wlan0</span><br></pre></td></tr></table></figure></div><p>如果你在執行<code>dhclient wlan0</code> 遇到了報錯</p><p>請嘗試 安裝</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">emerge -av net-misc/dhcp</span><br><span class="line">​</span><br></pre></td></tr></table></figure></div><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="systemctl說明"><a href="#systemctl說明" class="headerlink" title="systemctl說明"></a><code>systemctl</code>說明</h4><p>是 Systemd 中的命令行工具，用於查看和管理系統上運行的服務（service）、單元（unit）和套件（package）的狀態。</p><p>以下是一些常見的 <code>systemctl</code> 命令：</p><ul><li><code>systemctl status &lt;service&gt;</code>：查看服務狀態。</li><li><code>systemctl start &lt;service&gt;</code>：啟動服務。</li><li><code>systemctl stop &lt;service&gt;</code>：停止服務。</li><li><code>systemctl restart &lt;service&gt;</code>：重啟服務。</li><li><code>systemctl enable &lt;service&gt;</code>：設置服務在開機時自動啟動。</li><li><code>systemctl disable &lt;service&gt;</code>：設置服務在開機時不自動啟動。</li></ul><p>在 <code>systemctl</code> 命令後加上 <code>-a</code> 選項可以列出所有服務的狀態，加上 <code>--failed</code> 選項可以列出失敗的服務。例如：</p><ul><li><code>systemctl -a</code>：列出所有服務的狀態。</li><li><code>systemctl --failed</code>：列出失敗的服務。</li></ul><h4 id="resolv-conf-說明"><a href="#resolv-conf-說明" class="headerlink" title="resolv.conf 說明"></a><code>resolv.conf</code> 說明</h4><p>以下是一些在 <code>resolv.conf</code> 文件中常見的設置示例：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">nameserver 8.8.8.8</span><br></pre></td></tr></table></figure></div><p>這行設置將使用谷歌的 DNS 伺服器（IP 位址為 8.8.8.8）來查詢網址。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">nameserver 8.8.4.4</span><br></pre></td></tr></table></figure></div><p>這行設置將使用谷歌的第二個 DNS 伺服器（IP 位址為 8.8.4.4）來查詢網址。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">domain example.com</span><br></pre></td></tr></table></figure></div><p>這行設置指定了本地網路的預設 DNS 域名，也就是如果本地查詢的網址沒有指定域名，就會自動添加該域名。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">search example.com</span><br></pre></td></tr></table></figure></div><p>這行設置與 <code>domain</code> 相似，但是可以指定多個 DNS 域名，如果本地查詢的網址沒有指定域名，就會按照指定的域名順序逐一嘗試查詢。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">options rotate</span><br></pre></td></tr></table></figure></div><p>這行設置會告訴本地 DNS 解析器在每次查詢網址時，輪流使用每個 DNS 伺服器，而不是一直使用同一個 DNS 伺服器，這可以平衡不同 DNS 伺服器的負載，提高解析效率。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​</span><br><span class="line">options timeout:2 attempts:3</span><br></pre></td></tr></table></figure></div><p>這行設置會告訴本地 DNS 解析器在查詢網址時，如果一個 DNS 伺服器沒有回應，就在 2 秒內等待該伺服器回應，如果等待超時，就嘗試最多 3 次查詢，然後再切換到下一個 DNS 伺服器嘗試查詢。這樣可以避免等待超時造成的查詢延遲，提高解析效率。</p><h3 id="引用來源"><a href="#引用來源" class="headerlink" title="引用來源"></a>引用來源</h3><ol><li><a class="link"   href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Base/zh-cn" >官方 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>wiki安裝文檔</li><li>中文版較權威<a class="link"   href="https://bitbili.net/gentoo-linux-installation-and-usage-tutorial.html" >文檔  <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li>Gtrush的<a class="link"   href="https://gtrush.com/2022/06/12/%E6%96%B0%E6%89%8BGentoo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%951-%E5%AE%89%E8%A3%85%E7%AF%87-%E4%BA%8C%E8%BF%9B%E5%88%B6kernel%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/" >教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li>chatGPT &amp; Google</li></ol><h3 id="寫在最後"><a href="#寫在最後" class="headerlink" title="寫在最後"></a>寫在最後</h3><p>首先，我希望你可以在觀看別人教程視頻的時候，我的這點微不足道的經驗可以為你理清思路，同時也希望你可以早日體驗到gentoo的樂趣（壞笑）。如果能夠幫到你就太好了！</p><p>日後我或許會補充一些其他編譯的踩坑經驗。</p><p>對gentoo有興趣的小夥伴可以加入<a class="link"   href="https://t.me/gentoo_zh_offtopic" >tg-group <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>我如果有錯的表述，歡迎聯繫我與我交流，虛心請大佬指教。</p><p>當然，如果您對這種滾動式更新及編譯式安裝我更建議你使用Archlinux，省心又省電，重要你的身體不會因此高負荷感到不適。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;description: 一些疑難雜症，希望可以幫到&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;不完整的Gentoo安裝&quot;&gt;&lt;a href=&quot;#不完整的Gentoo安裝&quot; class=&quot;headerlink&quot; title=&quot;不完整的Gentoo安裝&quot;&gt;&lt;/a&gt;不完整的Gentoo安</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.jioushan.top/categories/Linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在公網宣告地址須知</title>
+    <link href="https://www.jioushan.top/2023/06/10/BGP%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    <id>https://www.jioushan.top/2023/06/10/BGP%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/</id>
+    <published>2023-06-09T17:44:39.000Z</published>
+    <updated>2024-02-12T16:39:35.675Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="🌏-在公網宣告地址須知"><a href="#🌏-在公網宣告地址須知" class="headerlink" title="🌏 在公網宣告地址須知"></a>🌏 在公網宣告地址須知</h1><p>基于种种因素，我决定将自己踏坑的经验整理出来。（最近翻技术的时候，看到别的大牛写的一些文章。自愧不如）当然，从某些因素而言，我的BGP知识不过还是小白。如果这点帮助有用的话，希望能够帮助那些有興趣的學習者，微不足道的解釋。毕竟有些内容 业界大牛反比起我 更优秀。咱是一隻菜雞。</p><p>2021年，注意这篇文章是2021年，以后的变动与作者无关</p><h3 id="首先-amp-x20"><a href="#首先-amp-x20" class="headerlink" title="首先&amp;#x20;"></a>首先&amp;#x20;</h3><p>根据不同的地域 ，您应当向<strong>對應區域</strong> 所在的<strong>组织</strong> 註冊账号。</p><figure><img                       lazyload                     src="/images/loading.svg"                     data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Regional_Internet_Registries_world_map.svg/620px-Regional_Internet_Registries_world_map.svg.png"                      alt=""                ><figcaption></figcaption></figure><p>比如歐洲，RIPE NCC 。<strong>注意，不通區域註冊管理局 資源管理自治權限不同。</strong></p><h3 id="然後-amp-x20"><a href="#然後-amp-x20" class="headerlink" title="然後&amp;#x20;"></a>然後&amp;#x20;</h3><p>您應當 尋找LIR申请一个對應區域的ASN号。「個人與企業」</p><p>如何找到LIR？请访问<a class="link"   href="https://www.lowendtalk.com/discussion/160162/the-aio-ip-related-thread-ipv4-ipv6-asn-only-providers-are-allowed-to-post-offers-2" >此链接 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，这个论坛帖子有全球大量的LIR及ASN求购♂家。</p><p>或者<a class="link"   href="https://t.me/jioushan" >聯絡我 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，我盡我所能為您解答您的疑惑，解決您的問題。</p><h4 id="當然，若您有自己的需求，您可以註冊一家海外公司，通過加入所在地區互联网自治区域-加入-会员，支付一筆不菲的费用，那么你自然可以申请到ASN号资源，以及可以分配的ipv6资源。（等，好处多多"><a href="#當然，若您有自己的需求，您可以註冊一家海外公司，通過加入所在地區互联网自治区域-加入-会员，支付一筆不菲的费用，那么你自然可以申请到ASN号资源，以及可以分配的ipv6资源。（等，好处多多" class="headerlink" title="當然，若您有自己的需求，您可以註冊一家海外公司，通過加入所在地區互联网自治区域 加入 会员，支付一筆不菲的费用，那么你自然可以申请到ASN号资源，以及可以分配的ipv6资源。（等，好处多多"></a>當然，若您有自己的需求，您可以註冊一家海外公司，通過加入所在地區互联网自治区域 加入 会员，支付一筆不菲的费用，那么你自然可以申请到ASN号资源，以及可以分配的ipv6资源。（等，好处多多</h4><p>比方說：APNIC <a class="link"   href="https://www.apnic.net/get-ip/apnic-membership/" >https://www.apnic.net/get-ip/apnic-membership/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="其次"><a href="#其次" class="headerlink" title="其次"></a>其次</h3><p>與lir接洽，字段的創建。大部分管理註冊局都有對應的文檔翻閱。</p><p>引用之前補檔內容，RIPE NCC的字段<a href="https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/">創建</a></p><p>直到當您已经拥所屬與您的ASN。</p><p>您需要學習，有一定網路基礎。通過路由器 或者 bird等路由工具， 將您的地址宣告。</p><p>完善您的ASN資料在 <a class="link"   href="https://peeringdb.com/" >peeringdb.com  <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 便于更新抓取。</p><h3 id="後續您的ASN觀察"><a href="#後續您的ASN觀察" class="headerlink" title="後續您的ASN觀察"></a>後續您的ASN觀察</h3><p><a class="link"   href="https://bgp.he.net/" >bgp.he.net <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> . <a class="link"   href="https://bgp.tools/" >bgp.tools <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h3><p>如您是以個人身份註冊您的ASN，謹防实名上网。</p><p>關於如何广播宣告您的ipv6 prefix。首先您要諮詢您的ISP&#x2F;上游是否具有給您广播BGP的能力？\</p><p><a class="link"   href="http://bgp.services/" >列举网站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，可以广播 BGP及售卖ip地址段，lir等商家汇总。数据不一定全。</p><p>強烈建議 新手 去<a class="link"   href="https://vultr.com/" >vultr <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 實驗學習。關於如何在vultr上廣播宣告prefix。它們文檔寫的很清楚。以及關於LOA的製作，您需要的無非是模板。建議您參考cloudflare<a class="link"   href="https://developers.cloudflare.com/byoip/about/loa/" >模板  <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p><br>後續內容请续读这里！<a class="link"   href="https://blog.jsmsr.com/blog/bgp4-zuo-wei-ge-ren-yong-hu-de-kan-dai" >URL <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;🌏-在公網宣告地址須知&quot;&gt;&lt;a href=&quot;#🌏-在公網宣告地址須知&quot; class=&quot;headerlink&quot; title=&quot;🌏 在公網宣告地址須知&quot;&gt;&lt;/a&gt;🌏 在公網宣告地址須知&lt;/h1&gt;&lt;p&gt;基于种种因素，我决定将自己踏坑的经验整理出来。（最近翻技术的</summary>
+      
+    
+    
+    
+    <category term="Network" scheme="https://www.jioushan.top/categories/Network/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Debian 12 apt</title>
+    <link href="https://www.jioushan.top/2023/03/31/debian-12-apt/"/>
+    <id>https://www.jioushan.top/2023/03/31/debian-12-apt/</id>
+    <published>2023-03-30T16:01:31.000Z</published>
+    <updated>2024-02-12T16:44:41.460Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Debian-12-apt"><a href="#Debian-12-apt" class="headerlink" title="Debian 12 apt"></a>Debian 12 apt</h1><p>若你是 直接 安裝的 Debian12 的話 它的新的 apt源 配置文件 稍微有些不一樣。</p><p>首先 我們進入 它的路徑</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/apt/sources.list.d</span><br></pre></td></tr></table></figure></div><p>目錄下有 <code>debian.sources</code> 這樣的一個文件。</p><p>我們打開 並觀察它。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Types: deb deb-src</span><br><span class="line">URIs: mirror+file:///etc/apt/mirrors/debian.list</span><br><span class="line">Suites: bookworm bookworm-updates bookworm-backports</span><br><span class="line">Components: main</span><br><span class="line"></span><br><span class="line">Types: deb deb-src</span><br><span class="line">URIs: mirror+file:///etc/apt/mirrors/debian-security.list</span><br><span class="line">Suites: bookworm-security</span><br><span class="line">Components: main</span><br></pre></td></tr></table></figure></div><p>我們 重點 關注 URL 這個路徑，所以我們要切換到 <code>/etc/apt/mirrors</code> 路徑下。</p><p>然後 修改 它們的兩個文件。<br>官方源</p><p>目錄下有 <code>debian.sources</code> 這樣的一個文件。</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://deb.debian.org/debian-security</span><br><span class="line"></span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://deb.debian.org/debian</span><br><span class="line"></span><br></pre></td></tr></table></figure></div><p><br>然後執行 <code>apt update</code> 即可 更新 我們的軟件源。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Debian-12-apt&quot;&gt;&lt;a href=&quot;#Debian-12-apt&quot; class=&quot;headerlink&quot; title=&quot;Debian 12 apt&quot;&gt;&lt;/a&gt;Debian 12 apt&lt;/h1&gt;&lt;p&gt;若你是 直接 安裝的 Debian12 的話 它的新</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.jioushan.top/categories/Linux/"/>
+    
+    <category term="Debian12" scheme="https://www.jioushan.top/categories/Debian12/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>搭建Alist於您的服務器</title>
+    <link href="https://www.jioushan.top/2023/01/09/%E6%90%AD%E5%BB%BAalist%E6%96%BC%E6%82%A8%E7%9A%84%E6%9C%8D%E5%8B%99%E5%99%A8/"/>
+    <id>https://www.jioushan.top/2023/01/09/%E6%90%AD%E5%BB%BAalist%E6%96%BC%E6%82%A8%E7%9A%84%E6%9C%8D%E5%8B%99%E5%99%A8/</id>
+    <published>2023-01-09T09:38:21.000Z</published>
+    <updated>2024-01-16T15:11:14.595Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="緣由（僅適用Linux）"><a href="#緣由（僅適用Linux）" class="headerlink" title="緣由（僅適用Linux）"></a>緣由（僅適用Linux）</h2><p>最近想在自己的network上運行雲盤，找了一圈，發現這個能滿足我自己的需求。</p><h3 id="使用wget（我這裡下載的是amd64架構的版本）"><a href="#使用wget（我這裡下載的是amd64架構的版本）" class="headerlink" title="使用wget（我這裡下載的是amd64架構的版本）"></a>使用wget（我這裡下載的是amd64架構的版本）</h3><p>使用cd到您要下載install的目錄（我這裡使用的是 <code>/data1/www</code></p><p>通過wget命令下載此VM架構的安裝包 官方<a class="link"   href="https://github.com/alist-org/alist/releases" >releases <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>wget -4 <a class="link"   href="https://github.com/alist-org/alist/releases/download/v3.8.0/alist-linux-amd64.tar.gz" >https://github.com/alist-org/alist/releases/download/v3.8.0/alist-linux-amd64.tar.gz <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>然後通過tar -zxvf 解壓到當下路徑</p><p>tar -zxvf alist-linux-amd64.tar.gz</p><p>賦予執行權限</p><p>chmod +x alist</p><p>.&#x2F;alist server</p><p>執行alist進程 然後您會看到 有一行 admn 的密碼 ，請務必copy，然後查詢下面的本地端口(默認端口為5244)，使用 本地&#x2F;ip :5244訪問</p><p>點擊頁面下腳管理 輸入user：admin 密碼為你剛才copy的密碼</p><h3 id="所以第一件事是先修改密碼。"><a href="#所以第一件事是先修改密碼。" class="headerlink" title="所以第一件事是先修改密碼。"></a>所以第一件事是先修改密碼。</h3><p>若您忘記密碼執行此命令。</p><p>.&#x2F;alist admin</p><h3 id="守護進程"><a href="#守護進程" class="headerlink" title="守護進程"></a>守護進程</h3><p>vim &#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;alist.service</p><p>vim 創建並編輯此內容</p><p><strong>[Unit]</strong><br>Description&#x3D;alist<br>After&#x3D;network.target  </p><p><strong>[Service]</strong><br>Type&#x3D;simple<br>WorkingDirectory&#x3D;path_alist<br>ExecStart&#x3D;path_alist&#x2F;alist server<br>Restart&#x3D;on-failure  </p><p><strong>[Install]</strong><br>WantedBy&#x3D;multi-user.target</p><p>我們將文中的</p><p><code>path_alist</code>替換為我們剛剛下載解壓的路徑</p><p>查看當前路徑<code>pwd</code></p><p>最後鍵入<code>:wq</code>保存並退出vim編譯器</p><p>最後我們輸入<code>systemctl daemon-reload</code></p><p>啟動：<code>systemctl start alist</code></p><p>停止：<code>systemctl stop alist</code></p><p>開機啟動：<code>systemctl enable alist</code></p><p>查看狀態：<code>systemctl status alist</code></p><p>重啟alist進程：<code>systemctl restart alist</code></p><p>最後您可以通過nginx反代本地端口 然後通過域名訪問！</p><p>以及如何配置存儲閱讀以下文檔&#x2F;自行檢索 網絡有不少教程！</p><p>參考文檔：<a class="link"   href="https://alist.nn.ci/" >https://alist.nn.ci/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;緣由（僅適用Linux）&quot;&gt;&lt;a href=&quot;#緣由（僅適用Linux）&quot; class=&quot;headerlink&quot; title=&quot;緣由（僅適用Linux）&quot;&gt;&lt;/a&gt;緣由（僅適用Linux）&lt;/h2&gt;&lt;p&gt;最近想在自己的network上運行雲盤，找了一圈，發現這個能</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="https://www.jioushan.top/categories/uncategorized/"/>
+    
+    
+    <category term="Alist" scheme="https://www.jioushan.top/tags/Alist/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>關於我不推薦使用MacOS13的幾個理由</title>
+    <link href="https://www.jioushan.top/2022/12/24/%E9%97%9C%E6%96%BC%E6%88%91%E4%B8%8D%E6%8E%A8%E8%96%A6%E4%BD%BF%E7%94%A8macos13%E7%9A%84%E5%B9%BE%E5%80%8B%E7%90%86%E7%94%B1/"/>
+    <id>https://www.jioushan.top/2022/12/24/%E9%97%9C%E6%96%BC%E6%88%91%E4%B8%8D%E6%8E%A8%E8%96%A6%E4%BD%BF%E7%94%A8macos13%E7%9A%84%E5%B9%BE%E5%80%8B%E7%90%86%E7%94%B1/</id>
+    <published>2022-12-24T15:18:45.000Z</published>
+    <updated>2024-01-16T15:11:14.597Z</updated>
+    
+    <content type="html"><![CDATA[<p>截止到12&#x2F;24日 （🎄聖誕節前夜講這個似乎不太好。但是今晚我終於忍不住了）</p><p>到現在為止，Mac13OS是13.1（22C65）這個版本！</p><p>從13.0到13.1我使用它共兩個小版本。由此可見。體驗極差！至少回退降級到心又再次出現了！</p><p>從常用的軟件閃退（比方說 瀏覽器，Firefox打不開，edge閃退，telegram閃退）</p><p>新增功能我不反對，或者說對我用道的少兒又少，但是系統層最基礎的都做不好！</p><p>又甚者出現，回收站的垃圾無法還原。我原本16G內存感激還很寬裕，現在瀏覽器標籤頁稍微開多一些，就會有各種不愉快現象。內存也在吃緊，同時後台也變得沒有之前那樣的舒適體驗。</p><p>當然還有這個不是很想評價的設置，其實我覺得以前的設置挺好用的。</p><p>最後的最後 愈發的希望回退版本。</p><p>Merry Christmas！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;截止到12&amp;#x2F;24日 （🎄聖誕節前夜講這個似乎不太好。但是今晚我終於忍不住了）&lt;/p&gt;
+&lt;p&gt;到現在為止，Mac13OS是13.1（22C65）這個版本！&lt;/p&gt;
+&lt;p&gt;從13.0到13.1我使用它共兩個小版本。由此可見。體驗極差！至少回退降級到心又再次出現了！&lt;</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="https://www.jioushan.top/categories/uncategorized/"/>
+    
+    
+    <category term="Merry christmas" scheme="https://www.jioushan.top/tags/Merry-christmas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux的Swap設定</title>
+    <link href="https://www.jioushan.top/2022/11/25/linux%E7%9A%84swap%E8%A8%AD%E5%AE%9A/"/>
+    <id>https://www.jioushan.top/2022/11/25/linux%E7%9A%84swap%E8%A8%AD%E5%AE%9A/</id>
+    <published>2022-11-25T11:26:28.000Z</published>
+    <updated>2024-02-12T16:47:10.398Z</updated>
+    
+    <content type="html"><![CDATA[<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure></div><p>查看內存情況或</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapon --show</span><br></pre></td></tr></table></figure></div><p>查看目前的Swap分配情況！</p><h2 id="創建Swap"><a href="#創建Swap" class="headerlink" title="創建Swap"></a>創建Swap</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fallocate -l 1G /swapfile</span><br><span class="line"></span><br><span class="line">chmod 600 /swapfile</span><br></pre></td></tr></table></figure></div><p>設置激活Swap分區</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkswap /swapfile</span><br><span class="line"></span><br><span class="line">swapon /swapfile</span><br></pre></td></tr></table></figure></div><p>编辑 &#x2F;etc&#x2F;fstab 文件使Swap分配永久</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/fstab</span><br></pre></td></tr></table></figure></div><p>在此文件內尾部填入以下參數</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/swapfile swap swap defaults 0 0</span><br></pre></td></tr></table></figure></div><p>验证 Swap 分区</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapon --show</span><br></pre></td></tr></table></figure></div><h2 id="调整-Swappiness-值"><a href="#调整-Swappiness-值" class="headerlink" title="调整 Swappiness 值"></a>调整 Swappiness 值</h2><p>Swappiness 值代表着系统使用 Swap 的频率，从 0-100，数值越高越频繁使用。</p><p>查看系统默认：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /proc/sys/vm/swappiness</span><br></pre></td></tr></table></figure></div><p>修改：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl vm.swappiness=10</span><br></pre></td></tr></table></figure></div><p>持久化：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysctl.conf</span><br></pre></td></tr></table></figure></div><p>添加一行：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vm.swappiness=60</span><br></pre></td></tr></table></figure></div><p>具体数值需要根据实际情况调整。</p><h2 id="刪除Swap"><a href="#刪除Swap" class="headerlink" title="#刪除Swap"></a>#刪除Swap</h2><p>先取消激活 Swap 分区：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff -v /swapfile</span><br></pre></td></tr></table></figure></div><p>然后编辑 <code>/etc/fstab</code> 文件，删除之前添加的那行：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/swapfile swap swap defaults 0 0</span><br></pre></td></tr></table></figure></div><p>最后，删除 Swap 文件：</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm /swapfile</span><br></pre></td></tr></table></figure></div><p>本教程：<a class="link"   href="https://meta.appinn.net/t/topic/27359" >來源 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 若有侵權，請聯繫我刪除！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;highlight-container&quot; data-rel=&quot;Plaintext&quot;&gt;&lt;figure class=&quot;iseeu highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span cla</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.jioushan.top/categories/Linux/"/>
+    
+    
+    <category term="Swap" scheme="https://www.jioushan.top/tags/Swap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通過Cloudflare使用PTR</title>
+    <link href="https://www.jioushan.top/2022/11/25/%E9%80%9A%E9%81%8Ecloudflare%E4%BD%BF%E7%94%A8ptr/"/>
+    <id>https://www.jioushan.top/2022/11/25/%E9%80%9A%E9%81%8Ecloudflare%E4%BD%BF%E7%94%A8ptr/</id>
+    <published>2022-11-25T11:12:33.000Z</published>
+    <updated>2024-02-12T16:57:00.639Z</updated>
+    
+    <content type="html"><![CDATA[<p>#此教程感謝一位朋友幫助！</p><p>總所周知當我們使用mtr的時候<br>或者besttrace的時候，  </p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/11/dc0810d41d145e4a.png"                                     ></p><p>比方說這張</p><p>我們能看到每一跳 其實是IP地址的，但為何一個ip地址卻顯示出主機名呢？  </p><p>這裡我們便需要dns服務中的一種類型，PTR 指針！</p><p>請理解RDNS</p><p>言簡意賅，直接說教程吧。</p><p>#首先</p><p>copy您的prefix至這類的反碼計算<br><a class="link"   href="https://adminhacks.com/subnet/ip6.arpa.html" >工具網址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> <a class="link"   href="https://www.coderstool.com/ipv6-subnet-calculator" >備用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>計算站點<br>將得出的反碼通過cloud flare 正常<strong>添加域名</strong>方式 添加到cloudflare！</p><p>一步一步，免費計畫，到這一步，cloudflare的服務器要求域名的DNS到cloudflare分配給您的DNS地址</p><p>#第二步</p><p>聯繫您這個prefix的lir&#x2F;具有您prefix大段的控制者&#x2F;管理員<br>將此prefix的分配機構添加如下信息！<br>本文這裡只拿ripe操作來舉例子！<br>首先創建一個domain: 類型<br>1.填寫您的prefix 反碼<br>2.填入cloudflare分配給您的nserver:（nameserver）</p><p>3.您這個prefix的管理信息</p><p>最後提交！至此，若沒有提升任何抱錯，即跳轉去cloudflare刷新域名，即可看到您對此反碼的控制權！<br>例如截圖  </p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/11/cf1d1b0dbad3e3e9.png"                                     ></p><p>#若您提交出現任何抱錯，請聯繫分配給您這個prefix管理者&#x2F;控制者「以協助你將您的反碼修改至您的DNSserver</p><p>#最後的最後，您可以在cloudflare的DNS控制台，新建一條PTR類型的紀錄<br>前面是ip地址反碼，（注意也是反碼，因為PTR類型要求地址必為反碼）<br>內容填寫您要他人在發現您路由時出現的域名信息！<br>內容均有您來控制！  </p><p>#您可以通過這裡查詢您的PTR生效紀錄 <a class="link"   href="https://mxtoolbox.com/SuperTool.aspx" >網址 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>  </p><p>至此，教程結束！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#此教程感謝一位朋友幫助！&lt;/p&gt;
+&lt;p&gt;總所周知當我們使用mtr的時候&lt;br&gt;或者besttrace的時候，  &lt;/p&gt;
+&lt;p&gt;&lt;img  
+                     lazyload
+                     src=&quot;/images/l</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.jioushan.top/categories/Linux/"/>
+    
+    
+    <category term="cloudflare" scheme="https://www.jioushan.top/tags/cloudflare/"/>
+    
+    <category term="prefix" scheme="https://www.jioushan.top/tags/prefix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ME？</title>
+    <link href="https://www.jioushan.top/2022/10/03/blog/"/>
+    <id>https://www.jioushan.top/2022/10/03/blog/</id>
+    <published>2022-10-03T09:04:34.000Z</published>
+    <updated>2024-01-16T15:11:14.590Z</updated>
+    
+    <content type="html"><![CDATA[<p>虽说是博客，闲散的东西 什么都会去聊一些，有值得讲也有廢話文學，但是這邊存放的都是可講的技術性觀點！</p><p>有關於我，這似乎不是一個好問題！我應當輸出我的想法嗎？還是應該您先向我輸入，然後我輸出，您的過濾器適當過濾，看看我們能否Peer？（笑って</p><p>您若不懂，我則換一種表達，若您對我有興趣，請主動與我<a class="link"   href="https://t.me/jioushan" >聯絡 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，看看我是否是屬於合時您的那一款！（</p><p>=&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p><p>歡迎 志同道合 網絡學習者，Linux 使用玩家，極客 ，喜欢來友好貼貼！當然咱也支持LGBT人士（小聲嘟囔</p><p>（（（（（（（）））））））</p><p>关于 名字？站点的名字 没有什么太多的缘由啦！大抵源于小时候 最早就想创办公司 起名时的 音译， 后来发现我拼音输入 有问题，将错就错，就慢慢变成这样了，同时 绝大多数站点中 此名字 所属我 概率极高！</p><p>&gt;&gt;&gt;&gt;&gt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</p><p>JSMSR@2022</p><p>JIOUSHAN</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;虽说是博客，闲散的东西 什么都会去聊一些，有值得讲也有廢話文學，但是這邊存放的都是可講的技術性觀點！&lt;/p&gt;
+&lt;p&gt;有關於我，這似乎不是一個好問題！我應當輸出我的想法嗎？還是應該您先向我輸入，然後我輸出，您的過濾器適當過濾，看看我們能否Peer？（笑って&lt;/p&gt;
+&lt;p&gt;您若</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="https://www.jioushan.top/categories/uncategorized/"/>
+    
+    
+    <category term="ME" scheme="https://www.jioushan.top/tags/ME/"/>
+    
+    <category term="杂谈" scheme="https://www.jioushan.top/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个域名的退役结束</title>
+    <link href="https://www.jioushan.top/2022/06/22/%E4%B8%80%E4%B8%AA%E5%9F%9F%E5%90%8D%E7%9A%84%E9%80%80%E5%BD%B9%E7%BB%93%E6%9D%9F/"/>
+    <id>https://www.jioushan.top/2022/06/22/%E4%B8%80%E4%B8%AA%E5%9F%9F%E5%90%8D%E7%9A%84%E9%80%80%E5%BD%B9%E7%BB%93%E6%9D%9F/</id>
+    <published>2022-06-22T15:26:38.000Z</published>
+    <updated>2024-02-12T16:49:44.853Z</updated>
+    
+    <content type="html"><![CDATA[<p>始于19年，</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/06/f24ab29a8858deca.png"                                     ></p><p>说起来，这算是我接触域名后注册的第二个站点</p><p>第一个备案站点</p><p>曾托管各种服务！</p><p>陪伴我3年的域名就这样被我取消续费！停止运营此域名！</p><p>而关于此域名后续的迁移请了解<a class="link"   href="https://about.jsmsr.com/?p=139" >此篇文章 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>备案和网备就这样结束！</p><p>备案半个月 注销1小时</p><p>时至2022&#x2F;6&#x2F;22此域名见证了 作为我长达三年的Web建站史</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/06/74c8493c93545a0e.png"                                     ></p><p>注册公安网备也如此顺利</p><p>关于注销备案的必要性嗷！Tips: 众所周知 有些域名有效期过后 在域名注册商将此域名注册放出的时候，一部分流氓第三方公司，他们会抓取曾经这些备案网站进行，抢注！如若对方注册了你曾经使用的域名，且你未注销备案的情况下！对方进行犯法活动会依法追究到你头上 造成不必要的麻烦和纠结！所以 曾有过备案的主体下网站 在未续费 未有此域名的控制权时，请注销备案！以防止带来诸多不便及损失！</p><p>从今天起，我们的以下域名</p><p><a href="http://www.jioushan.top/">www.jioushan.top</a></p><p><a class="link"   href="http://www.jsmsr.com/" >www.jsmsr.com <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>将继续提供对于CN_Zh服务！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;始于19年，&lt;/p&gt;
+&lt;p&gt;&lt;img  
+                     lazyload
+                     src=&quot;/images/loading.svg&quot;
+                     data-src=&quot;https://</summary>
+      
+    
+    
+    
+    <category term="note" scheme="https://www.jioushan.top/categories/note/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>RIPE 注册及字段创建</title>
+    <link href="https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/"/>
+    <id>https://www.jioushan.top/2022/05/31/ripe-%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%AD%97%E6%AE%B5%E5%88%9B%E5%BB%BA/</id>
+    <published>2022-05-31T09:35:38.000Z</published>
+    <updated>2024-02-12T15:15:01.561Z</updated>
+    
+    <content type="html"><![CDATA[<p>BGP Player</p><p>作为接下来即以后要讲述的企划！</p><p>这部分文字的重要性，而我认为此篇文字 将为JNE（Jsmsr Experimental Network）重要开篇！</p><p><a class="link"   href="http://www.jsmsr.com/" >JSMSR <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> <strong>only ipv6</strong></p><p>RPIE 注册教程</p><p>本文字 来源于 夜空 <a class="link"   href="https://web.archive.org/web/20190227042014/https:/www.ykhut.com/archives/72/" >文章 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h2 id="RIPE账号注册与必要字段创建"><a href="#RIPE账号注册与必要字段创建" class="headerlink" title="RIPE账号注册与必要字段创建"></a>RIPE账号注册与必要字段创建</h2><p>首先 您应该注册一个ripe账户，建议常用邮箱 以便于维护 找寻</p><p><strong>注册地址：</strong><a class="link"   href="https://web.archive.org/web/20190227042014/https://www.ykhut.com/go/aHR0cHM6Ly9hY2Nlc3MucmlwZS5uZXQvcmVnaXN0cmF0aW9u" > <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><a class="link"   href="https://web.archive.org/web/20190227042014/https://www.ykhut.com/go/aHR0cHM6Ly9hY2Nlc3MucmlwZS5uZXQvcmVnaXN0cmF0aW9u" >https://access.ripe.net/registration <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>通过邮箱验证之后 您应当在控制面板 创建一些 字段和值</p><p><strong>首先创建person 和 maintainer</strong></p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/05/febc1e3387234cf3.png"                                     ></p><p>点击create创建此字段</p><p><strong>mntner:</strong> 维护者的字段名，纯英文，可包含”-“和”_“，建议格式为_*_-MNT，例如YekongTAT-MNT</p><p><strong>person:</strong> 维护者的称呼，可以写全名或其他名称。可包含英文、数字和.`‘_-</p><p><strong>address:</strong> 地址<br><strong>phone:</strong> 手机号，建议格式为+国家区号.手机号，例如+85211112222</p><p>创建之后</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/05/2e16817713d65b4f.png"                                     ></p><p>person with primary key</p><p>“MNS89-RIPE”</p><p>以及</p><p>mntner with primary key “MoeQing-MNT”<br>这两个分别为admin-c以及mntner&#x2F;mnt-ref，如果以后遇到需要填写这两个字段的，那么填写这两个即可。<br>一切完成后即可下一步。</p><hr><p><strong>接下来 创建role对象</strong></p><p>和前面相同，选择”role”对象创建即可</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/05/0c875d5eab923282.png"                                     ></p><p>role: 起名字环节，建议格式XXX NOC<br>address: 与前面相同<br>nic-hdl： 可保持默认。</p><p>然后 点击nic-hdl 旁边的 <strong>+</strong></p><p>我们新建一项 abuse-mailbox字段，输入你的邮箱即可，然后就可以提交了。</p><p>之后您会得到这样的字段 role “MN12319-RIPE”，这个为<strong>abuse-c</strong>,如果以后遇到需要填写这两个字段的，那么填写这个即可。</p><hr><p><strong>创建organisation对象</strong></p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://cdn2.jsmsr.com/LightPicture/2022/05/5bac71c3a6ea019b.png"                                     ></p><p>字段解释：<br>organisation: 可保持默认。<br>org-name: 组织名称，可包含字母数字”-“和”_“，名称的第一个字符必须是字母，最后一个字符必须是字母或数字。某些单词由RPSL保留，不能使用。</p><p>org-type: 保持默认，也无法更改。<br>address: 地址栏，如果你要申请ASN请填写证件国家对应的地址。<br>e-mail: 填写你的邮箱。<br>abuse-c: 上文提到过，请填写role相关字段。<br>mnt-ref: 添加维护者对象。上文提到过，请填写mntner</p><p>请保存好以上资料。如有遗忘，请通过ripe数据库查询功能反向查询到内容</p><p>感谢此原文章由夜空所写，本篇为搬运&#x2F;补档，便于查询 理解 通过ripe IRR 数据库练手即在其他区域网络自治中心 维护字段信息，其内容大同小异。更多内容，以后将细讲！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;BGP Player&lt;/p&gt;
+&lt;p&gt;作为接下来即以后要讲述的企划！&lt;/p&gt;
+&lt;p&gt;这部分文字的重要性，而我认为此篇文字 将为JNE（Jsmsr Experimental Network）重要开篇！&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;link&quot;   href=&quot;http://</summary>
+      
+    
+    
+    
+    <category term="Network" scheme="https://www.jioushan.top/categories/Network/"/>
+    
+    
+    <category term="APNIC" scheme="https://www.jioushan.top/tags/APNIC/"/>
+    
+    <category term="JSMSR" scheme="https://www.jioushan.top/tags/JSMSR/"/>
+    
+    <category term="NetWork" scheme="https://www.jioushan.top/tags/NetWork/"/>
+    
+    <category term="RIPE" scheme="https://www.jioushan.top/tags/RIPE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈最近</title>
+    <link href="https://www.jioushan.top/2022/05/18/%E8%AB%87%E8%AB%87%E6%9C%80%E8%BF%91/"/>
+    <id>https://www.jioushan.top/2022/05/18/%E8%AB%87%E8%AB%87%E6%9C%80%E8%BF%91/</id>
+    <published>2022-05-18T04:04:24.000Z</published>
+    <updated>2024-01-16T15:11:14.596Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="尝试以静态站迁移方向-书写新blog"><a href="#尝试以静态站迁移方向-书写新blog" class="headerlink" title="尝试以静态站迁移方向 书写新blog"></a>尝试以静态站迁移方向 书写新blog</h3><p>well，我的博文都是比较闲散以日记方式存在的！</p><p>最近我在试着博客框架迁移，过去在决定使用wordpress之前的时候，hexo，啊一些静态站也是在努力尝试的。<br>或许近两年。无论是第三方CDN还是文件的变迁。包括自己也尝试在像gitbook这样的框架下写文章。发现有时候，或许一个好看的主题未必是主要的。丰富的内容才是重要的受众问题。</p><p>当你掌握知识到一定能力，好看的主题或许至是眼前一亮。或许真正有用的信息才是点开它，阅读它。一个简洁而又不略失功底的文章才是重要性的。</p><p>而且作为静态站，与我之前推进资源分布式部署的是正向的，既可以节省资源将网站部署在服务器以外的地方，也有一定手段可以使得资源变得易访问，从而因不在担心过度的网络攻击从而对服务器的资源大量占用。</p><p>当然我会在迁移的过程中 将一些旧的博文进行更新！</p><h3 id="关于个人组网AS134478"><a href="#关于个人组网AS134478" class="headerlink" title="关于个人组网AS134478"></a>关于个人组网AS134478</h3><p>关于对 边际网关BGP的学习与应用。我应该要感谢两位朋友，夜空，海马。没有两位的帮助我想我在这方面的探索还要好一阵儿。</p><p>Only IPV6</p><p>关于更多信息请跳转至 <a class="link"   href="http://www.jsmsr.com/peer" >www.jsmsr.com/peer <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="关于-riyi-xyz-这个域名的迁移"><a href="#关于-riyi-xyz-这个域名的迁移" class="headerlink" title="关于 riyi.xyz 这个域名的迁移"></a>关于 riyi.xyz 这个域名的迁移</h3><p>是的，此域名将于今年6月份终止运营和维护！所关联所有服务将进行迁移及弃用，访问这里了解更多</p><p><a class="link"   href="http://*.riyi.xyz/" >*.riyi.xyz <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>如果您有使用或依赖我们接口 的服务 请及时更迭！</p><h3 id="其实-昨日是国际不再恐同日"><a href="#其实-昨日是国际不再恐同日" class="headerlink" title="其实 昨日是国际不再恐同日"></a>其实 昨日是国际不再恐同日</h3><p>IDAHOTB，每年的5.17日是 国际不再恐同日，是公认的国际LGBTI权利纪念日哟！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;尝试以静态站迁移方向-书写新blog&quot;&gt;&lt;a href=&quot;#尝试以静态站迁移方向-书写新blog&quot; class=&quot;headerlink&quot; title=&quot;尝试以静态站迁移方向 书写新blog&quot;&gt;&lt;/a&gt;尝试以静态站迁移方向 书写新blog&lt;/h3&gt;&lt;p&gt;well，我</summary>
+      
+    
+    
+    
+    <category term="杂谈" scheme="https://www.jioushan.top/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+</feed>
