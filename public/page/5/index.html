@@ -49,7 +49,8 @@
     
     <title>
         
-        Jioushan Blog
+            Jioushan Blog - 真白屋
+        
     </title>
 
     
@@ -57,157 +58,6 @@
 
 
     <!--- Inject Part-->
-    
-
-    
-        <style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
-    
-<script src="/js/libs/anime.min.js"></script>
-
-    <h1 class="ml13">
-        Jioushan Blog
-    </h1>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [100,0],
-                translateZ: 0,
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            }).add({
-            targets: '.ml13 .letter',
-            translateY: [0,-100],
-            opacity: [1,0],
-            easing: "easeInExpo",
-            duration: 1200,
-            delay: (el, i) => 100 + 30 * i
-        });
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
-        }
-
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
-        } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
-        }
-
-        window.addEventListener('load', function () {
-            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
-        });
-
-        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
-        hidePreloaderAfterTimeout(5000);
-
-        function hidePreloaderAfterTimeout(delay) {
-            setTimeout(function () {
-                var preloader = document.querySelector('.preloader');
-                preloader.style.opacity = '0';
-                setTimeout(function () {
-                    preloader.style.display = 'none';
-                }, 200);
-            }, delay);
-        }
-    </script>
-</div>
     
 
     
@@ -221,23 +71,22 @@
     
 
     
-<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
 
     
-<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
 
     <!--- Font Part-->
     
     
     
     
-        <link href="" rel="stylesheet">
     
-
+    
 
     <script id="hexo-configurations">
     window.config = {"hostname":"www.jioushan.top","root":"/","language":"en"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"Read More","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"sidebar","announcement":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2019/4/04 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -257,6 +106,10 @@
 
     
     
+        
+<link rel="stylesheet" href="/fontawesome/light.min.css">
+
+    
     
     
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -273,6 +126,7 @@
 <!--        </span>-->
     
 </div>
+
 
 
 <main class="page-container" id="swup">
@@ -314,13 +168,12 @@
 
     
 
-    <div class="main-content-container">
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-
-    <div class="navbar-content ">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
@@ -370,10 +223,17 @@
                             </li>
                     
                     
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <!-- Mobile -->
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 
                 <div class="icon-item navbar-bar">
                     <div class="navbar-bar-middle"></div>
@@ -383,7 +243,7 @@
     </div>
 
     <!-- Mobile sheet -->
-    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
         <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
             
                 
@@ -429,13 +289,11 @@
 
             
             
-                
-            
         </ul>
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -443,7 +301,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -464,29 +322,17 @@
         
         
             
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">Jioushan Blog</div>
-                        
-                    </div>
-                    
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
+            <div class="sidebar-content" >
                 <div class="avatar flex justify-center">
     <img src="/favicon_pack/android-chrome-192x192.png">
 </div>
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">Avery</div>
     
-        <div class="label">Lv4</div>
-    
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -494,7 +340,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -521,6 +367,148 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90/">
+                            Linux系统换中科大镜像源
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            镜像源当然是国内用啦。国内，清华，中科大，阿里，网易。的都可以啦、
+虽然不想这里安利中科大的镜像源，不得不说他们有个工具很好用。
+点此访问 
+这里你只需要选择https接入（省得运营商屏蔽http）ipv6&#x2F;ipv4看你的协议支持咯。
+不过移动的ipv6真的有问题。不知道你就选ipv4
+我看到每个版本的Debian和Ubuntu的中科大镜像源。省得自己每次，把版本改过来那个麻烦。
+...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Jan 15 2020 23:48:54 GMT+0800">
+                
+                    2020-01-15
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Debian/">Debian</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/raspberry/">raspberry</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E4%B8%AD%E7%A7%91%E5%A4%A7/">中科大</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90/">Read more<span class="seo-reader-text">Linux系统换中科大镜像源</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2020/01/12/CM:CT:CU%E5%88%B0GCP%E5%8D%95%E5%90%91%E5%A6%82%E4%BD%95/">
+                            How about the three major domestic operators for the route tracking of large factories.
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            
+Previously written SS tutorials. But one-click scripting or something. Fool’s errands.Rack your brains for delay! Although it is very much a wool wool. Just write about some experience.
+How about ...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Jan 12 2020 05:10:54 GMT+0800">
+                
+                    2020-01-12
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/note/">note</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2020/01/12/CM:CT:CU%E5%88%B0GCP%E5%8D%95%E5%90%91%E5%A6%82%E4%BD%95/">Read more<span class="seo-reader-text">How about the three major domestic operators for the route tracking of large factories.</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2019/12/30/spd%E4%B8%8Estpd/">
                             SPD与STPD
                         </a>
@@ -528,8 +516,10 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             SPDSchizoid personality disorder（類精神分裂人格異常）：*****SPD是分裂型schizoid 的简称，类分裂型是schizotypal personality disorder,STPD。
-內向冷漠、遠離人群、臉無...
+內向冷漠、遠離人群、臉無表情。但與真正的精神分裂不同的是，沒有幻覺與妄想。因此無法診斷為精神分裂。
+內向冷漠、遠離人群、臉無表情（情緒冷淡），通常沉浸在自己的世界中，對...
                         
                     </div>
 
@@ -606,9 +596,13 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             steam有一款游戏，很休闲，很无聊。却很符合力学与建造学。
 当然它更真实的还原了现实感！
-Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买的。虽然我玩的关卡不多，但是BGM 很休闲，放松。而且很有趣的造桥。当然创意工坊有很...
+Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买的。虽然我玩的关卡不多，但是BGM 很休闲，放松。而且很有趣的造桥。当然创意工坊有很多有趣的更高级mod。
+最近我和我朋友开始一个非正经的过桥方式。
+
+本来这关卡是要正常的，搭建。桥，木材架起来。但是如何选择最简便的过桥方式即节...
                         
                     </div>
 
@@ -663,9 +657,13 @@ Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买�
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             云盘: 私有化存储分享站 （又拍云缓存）点此访问  点此访问 
 图床:点此访问 （China） 图床:点此访问  ( Edition ）(访问性差 ）
-(2022年3月，我们将决定关闭图床服务，使用私有化存储桶。届时原有图片访问备份请访问 此链接 )...
+(2022年3月，我们将决定关闭图床服务，使用私有化存储桶。届时原有图片访问备份请访问 此链接 )
+短链生成:点此访问  (msr.pub域名短链，HK快速解析）（服务已停止）
+随机封面图(仅限Anime) 点击访问  (Edition)
+网...
                         
                     </div>
 
@@ -787,7 +785,8 @@ Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买�
 
                     <div class="home-article-content markdown-body">
                         
-                            近期10月份没怎么写文章。今天来水一发，顺便补档。很多人10月份左右，用的国外厂商小机都被墙了。大部分人看着YouTube，v2Ray群里。ws+TLS+CDN这种协议救活了。当然很多人都很好奇的是走的CDN为何网络一样也不算很快。大家一起吃蛋糕。分...
+                            
+                            近期10月份没怎么写文章。今天来水一发，顺便补档。很多人10月份左右，用的国外厂商小机都被墙了。大部分人看着YouTube，v2Ray群里。ws+TLS+CDN这种协议救活了。当然很多人都很好奇的是走的CDN为何网络一样也不算很快。大家一起吃蛋糕。分成N份都走圣何塞？（你觉得快到哪去，免费的cf，国外加速，国内减速不争的事实）说起国内三大运营商，出口地区位置都不同。绕地球一大圈。延迟能快嘛。...
                         
                     </div>
 
@@ -864,9 +863,12 @@ Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买�
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             用自己的子域名搭建了个图床。（毕竟有一台免费闲置的虚拟主机）
 以前总是用白猫大大的图床 。长时间用下去。挺不好意思嘛。总不如自己搭建一个。
-因为用的是Chevereto 搭建的图床。发现很多人用这个搭建过图床。因为它的主题太容易辨识了。官方是有不同版...
+因为用的是Chevereto 搭建的图床。发现很多人用这个搭建过图床。因为它的主题太容易辨识了。官方是有不同版本收费的。
+GitHub：free版项目。链接 。下载 。
+用法：1,解压到Web站点目录&#x2F;子目录。看你的域名打开时要不要加子目录&#...
                         
                     </div>
 
@@ -938,7 +940,8 @@ Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买�
 
                     <div class="home-article-content markdown-body">
                         
-                            一个孤独世界追寻属于自己的旅人。迷茫似乎人人都会。这个人落魄的发现他苦苦挣扎了那么多年，这个世界时代没有属于，他容得下的位置。 追思回忆过去，展望未来。然而并不是所有人都是天才可以改变世界，围绕他所理想状态运转。 然而天才与疯子仅一线之隔。赌徒的输赢...
+                            
+                            一个孤独世界追寻属于自己的旅人。迷茫似乎人人都会。这个人落魄的发现他苦苦挣扎了那么多年，这个世界时代没有属于，他容得下的位置。 追思回忆过去，展望未来。然而并不是所有人都是天才可以改变世界，围绕他所理想状态运转。 然而天才与疯子仅一线之隔。赌徒的输赢。真的人生命运天平会倾斜与他吗？偏执与固执的性格。不羁的灵魂，熟知船的漂泊流向何方？ 人与人的距离。时代的思维差异。不只是物质精神看得见，摸得着...
                         
                     </div>
 
@@ -993,9 +996,14 @@ Polybridge（保利桥）我记得当时是看到有人在玩这个，steam 买�
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             Ubuntu的用法， debian 显示真的简陋到丑。这不重要。熟悉vim编辑器。Nono记下两个命令就好了！
 Ctrl+O 保存。Enter确认 Ctrl+x退出。如果直接退出（前提修改内容了）也会询问你要不要保存。Enter确认就好了。
-切换到s...
+切换到su root 管理员模式！
+1sudo passwd root
+
+ 执行此命令后系统会提示输入两遍的root密码（用来确保你记住了密码）。 
+1...
                         
                     </div>
 
@@ -1034,119 +1042,6 @@ Ctrl+O 保存。Enter确认 Ctrl+x退出。如果直接退出（前提修改内�
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2019/09/01/%E5%85%A5%E6%89%8B%E4%BA%86%E4%B8%80%E5%9D%97raspberry-pi-4b/">
-                            Raspberry Pi 4B
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            买了俩月的树莓派终于发货拿到手了。必要很需要壳子，散热片&#x2F;风扇还有个Mico HDMI转换头。毕竟线我还是有的。内存卡也提前买好了。镜像也烧录好。
-  
-可以利用花生壳内网穿透。这样外网就可以访问了。至于免费域名无所谓，自己注册一个域名解析...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Sep 01 2019 17:28:14 GMT+0800">
-                
-                    2019-09-01
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/Linux/">Linux</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2019/09/01/%E5%85%A5%E6%89%8B%E4%BA%86%E4%B8%80%E5%9D%97raspberry-pi-4b/">Read more<span class="seo-reader-text">Raspberry Pi 4B</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2019/09/01/cdn%E9%80%89%E6%8B%A9/">
-                            CDN选择？？？
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            CDN选择？？最近有些闷。来嘲笑我的无知。准确说学无止境。仍不到位。把这些陈年老坑补上把。不扯励志不扯没有的需求。仍然继续技术避免。就是我经常踩的坑。说白了经验来谈一谈。为何出现这种问题与便利性。
-CDN是个很强大的内容。加速&#x2F;减速取决于你...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Sep 01 2019 17:25:51 GMT+0800">
-                
-                    2019-09-01
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/note/">note</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2019/09/01/cdn%E9%80%89%E6%8B%A9/">Read more<span class="seo-reader-text">CDN选择？？？</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -1173,10 +1068,18 @@ CDN是个很强大的内容。加速&#x2F;减速取决于你...
         <div class="text-center">
             &copy;
             
-              <span>2019</span>
+              <span>2022</span>
               -
             
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Avery</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        59 posts in total
+                    </span>
+                    
+                </p>
             
         </div>
         
@@ -1198,16 +1101,30 @@ CDN是个很强大的内容。加速&#x2F;减速取决于你...
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
         </div>
         
-            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
-                
-                    http://beian.miit.gov.cn/
-                
-                ">鲁ICP备19049325号</a></div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
         
         
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
         
         
         
@@ -1263,6 +1180,35 @@ CDN是个很强大的内容。加速&#x2F;减速取决于你...
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -1324,6 +1270,10 @@ CDN是个很强大的内容。加速&#x2F;减速取决于你...
 
 
 
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
 
 
     
@@ -1336,6 +1286,16 @@ CDN是个很强大的内容。加速&#x2F;减速取决于你...
 <script src="/js/layouts/lazyload.js" type="module"></script>
 
 
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
 
@@ -1353,18 +1313,29 @@ CDN是个很强大的内容。加速&#x2F;减速取决于你...
 
 
 
-
-<div class="post-scripts" data-swup-reload-script>
     
-        
-<script src="/js/tools/tocToggle.js" type="module"></script>
+<script src="/js/libs/anime.min.js"></script>
 
-<script src="/js/layouts/toc.js" type="module"></script>
 
-<script src="/js/plugins/tabs.js" type="module"></script>
+
+
 
     
-</div>
+<script src="/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
 
 
     <div id="aplayer"></div>

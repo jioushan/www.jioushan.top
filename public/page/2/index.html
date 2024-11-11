@@ -49,7 +49,8 @@
     
     <title>
         
-        Jioushan Blog
+            Jioushan Blog - 真白屋
+        
     </title>
 
     
@@ -57,157 +58,6 @@
 
 
     <!--- Inject Part-->
-    
-
-    
-        <style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
-    
-<script src="/js/libs/anime.min.js"></script>
-
-    <h1 class="ml13">
-        Jioushan Blog
-    </h1>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [100,0],
-                translateZ: 0,
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            }).add({
-            targets: '.ml13 .letter',
-            translateY: [0,-100],
-            opacity: [1,0],
-            easing: "easeInExpo",
-            duration: 1200,
-            delay: (el, i) => 100 + 30 * i
-        });
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
-        }
-
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
-        } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
-        }
-
-        window.addEventListener('load', function () {
-            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
-        });
-
-        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
-        hidePreloaderAfterTimeout(5000);
-
-        function hidePreloaderAfterTimeout(delay) {
-            setTimeout(function () {
-                var preloader = document.querySelector('.preloader');
-                preloader.style.opacity = '0';
-                setTimeout(function () {
-                    preloader.style.display = 'none';
-                }, 200);
-            }, delay);
-        }
-    </script>
-</div>
     
 
     
@@ -221,23 +71,22 @@
     
 
     
-<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
 
     
-<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
 
     <!--- Font Part-->
     
     
     
     
-        <link href="" rel="stylesheet">
     
-
+    
 
     <script id="hexo-configurations">
     window.config = {"hostname":"www.jioushan.top","root":"/","language":"en"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"Read More","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"sidebar","announcement":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2019/4/04 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -257,6 +106,10 @@
 
     
     
+        
+<link rel="stylesheet" href="/fontawesome/light.min.css">
+
+    
     
     
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -273,6 +126,7 @@
 <!--        </span>-->
     
 </div>
+
 
 
 <main class="page-container" id="swup">
@@ -314,13 +168,12 @@
 
     
 
-    <div class="main-content-container">
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-
-    <div class="navbar-content ">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
@@ -370,10 +223,17 @@
                             </li>
                     
                     
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <!-- Mobile -->
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 
                 <div class="icon-item navbar-bar">
                     <div class="navbar-bar-middle"></div>
@@ -383,7 +243,7 @@
     </div>
 
     <!-- Mobile sheet -->
-    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
         <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
             
                 
@@ -429,13 +289,11 @@
 
             
             
-                
-            
         </ul>
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -443,7 +301,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -464,29 +322,17 @@
         
         
             
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">Jioushan Blog</div>
-                        
-                    </div>
-                    
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
+            <div class="sidebar-content" >
                 <div class="avatar flex justify-center">
     <img src="/favicon_pack/android-chrome-192x192.png">
 </div>
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">Avery</div>
     
-        <div class="label">Lv4</div>
-    
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -494,7 +340,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -521,6 +367,129 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2023/06/30/%E4%B8%8D%E5%AE%8C%E6%95%B4%E7%9A%84Gentoo%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/">
+                            Gentoo入门指北
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            description: 一些疑難雜症，希望可以幫到
+
+不完整的Gentoo安裝不過我建議你應當滿足/準備以下
+1.強大的內心
+2.一塊U盤和你要安裝的磁碟
+3.獨立思考的大腦
+4.不厭其煩的嘗試
+5.chatgpt &amp; Google &amp; 官網文檔
+開始！！！systemctl ⚠️
+前半部分是在live CD 狀態下操作的，我這裡就不執行分割了，分割工具有像cfdisk，f...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Jun 30 2023 02:44:39 GMT+0800">
+                
+                    2023-06-30
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Linux/">Linux</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2023/06/30/%E4%B8%8D%E5%AE%8C%E6%95%B4%E7%9A%84Gentoo%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/">Read more<span class="seo-reader-text">Gentoo入门指北</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/06/10/BGP%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/">
+                            在公網宣告地址須知
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            🌏 在公網宣告地址須知基于种种因素，我决定将自己踏坑的经验整理出来。（最近翻技术的时候，看到别的大牛写的一些文章。自愧不如）当然，从某些因素而言，我的BGP知识不过还是小白。如果这点帮助有用的话，希望能够帮助那些有興趣的學習者，微不足道的解釋。毕竟有些内容 业界大牛反比起我 更优秀。咱是一隻菜雞。
+2021年，注意这篇文章是2021年，以后的变动与作者无关
+首先&amp;#x20;根据不同...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Jun 10 2023 01:44:39 GMT+0800">
+                
+                    2023-06-10
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Network/">Network</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2023/06/10/BGP%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/">Read more<span class="seo-reader-text">在公網宣告地址須知</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2023/03/31/debian-12-apt/">
                             Debian 12 apt
                         </a>
@@ -528,11 +497,14 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             Debian 12 apt若你是 直接 安裝的 Debian12 的話 它的新的 apt源 配置文件 稍微有些不一樣。
 首先 我們進入 它的路徑
 1cd /etc/apt/sources.list.d
 
-目錄下有 debian.sources 這樣的...
+目錄下有 debian.sources 這樣的一個文件。
+我們打開 並觀察它。
+123456789Types: deb deb-srcURIs: mirror+file:///etc/apt...
                         
                     </div>
 
@@ -594,9 +566,11 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             緣由（僅適用Linux）最近想在自己的network上運行雲盤，找了一圈，發現這個能滿足我自己的需求。
 使用wget（我這裡下載的是amd64架構的版本）使用cd到您要下載install的目錄（我這裡使用的是 /data1/www
-通過wget命令下...
+通過wget命令下載此VM架構的安裝包 官方releases 
+wget -4 https://github.com/alist-org/alist/releas...
                         
                     </div>
 
@@ -663,10 +637,12 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             截止到12&#x2F;24日 （🎄聖誕節前夜講這個似乎不太好。但是今晚我終於忍不住了）
 到現在為止，Mac13OS是13.1（22C65）這個版本！
 從13.0到13.1我使用它共兩個小版本。由此可見。體驗極差！至少回退降級到心又再次出現了！
-從常...
+從常用的軟件閃退（比方說 瀏覽器，Firefox打不開，edge閃退，telegram閃退）
+新增功能我不反對，或者說對我用道的少兒又少，但是系統層...
                         
                     </div>
 
@@ -733,6 +709,7 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             1free -m
 
 查看內存情況或
@@ -742,7 +719,10 @@
 創建Swap123fallocate -l 1G /swapfilechmod 600 /swapfile
 
 設置激活Swap分區
-123mkswap ...
+123mkswap /swapfileswapon /swapfile
+
+编辑 &#x2F;etc&#x2F;fstab 文件使Swap分配永久
+1vim /etc...
                         
                     </div>
 
@@ -809,13 +789,17 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             #此教程感謝一位朋友幫助！
 總所周知當我們使用mtr的時候或者besttrace的時候，  
 
 比方說這張
 我們能看到每一跳 其實是IP地址的，但為何一個ip地址卻顯示出主機名呢？  
 這裡我們便需要dns服務中的一種類型，PTR 指針！
-請理解RD...
+請理解RDNS
+言簡意賅，直接說教程吧。
+#首先
+copy您的prefix至這類的反碼計算工具網址  備用 計算站點將得出的反碼通過cloud flare...
                         
                     </div>
 
@@ -887,9 +871,11 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             虽说是博客，闲散的东西 什么都会去聊一些，有值得讲也有廢話文學，但是這邊存放的都是可講的技術性觀點！
 有關於我，這似乎不是一個好問題！我應當輸出我的想法嗎？還是應該您先向我輸入，然後我輸出，您的過濾器適當過濾，看看我們能否Peer？（笑って
-您若不懂...
+您若不懂，我則換一種表達，若您對我有興趣，請主動與我聯絡 ，看看我是否是屬於合時您的那一款！（
+=&#x3D;&#x3D;&#x3D;&#x3D;&#x...
                         
                     </div>
 
@@ -961,6 +947,7 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             始于19年，
 
 说起来，这算是我接触域名后注册的第二个站点
@@ -970,7 +957,10 @@
 而关于此域名后续的迁移请了解此篇文章 
 备案和网备就这样结束！
 备案半个月 注销1小时
-时至2022&...
+时至2022&#x2F;6&#x2F;22此域名见证了 作为我长达三年的Web建站史
+
+注册公安网备也如此顺利
+关于注销备案的必要性嗷！Tips: 众所周知 ...
                         
                     </div>
 
@@ -1025,12 +1015,15 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             BGP Player
 作为接下来即以后要讲述的企划！
 这部分文字的重要性，而我认为此篇文字 将为JNE（Jsmsr Experimental Network）重要开篇！
 JSMSR  only ipv6
 RPIE 注册教程
-本文字 来源于 夜空 文章...
+本文字 来源于 夜空 文章 
+RIPE账号注册与必要字段创建首先 您应该注册一个ripe账户，建议常用邮箱 以便于维护 找寻
+注册地址： https://access.r...
                         
                     </div>
 
@@ -1091,147 +1084,6 @@ RPIE 注册教程
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2022/05/18/%E8%AB%87%E8%AB%87%E6%9C%80%E8%BF%91/">
-                            谈谈最近
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            尝试以静态站迁移方向 书写新blogwell，我的博文都是比较闲散以日记方式存在的！
-最近我在试着博客框架迁移，过去在决定使用wordpress之前的时候，hexo，啊一些静态站也是在努力尝试的。或许近两年。无论是第三方CDN还是文件的变迁。包括自己...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 18 2022 12:04:24 GMT+0800">
-                
-                    2022-05-18
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2022/05/18/%E8%AB%87%E8%AB%87%E6%9C%80%E8%BF%91/">Read more<span class="seo-reader-text">谈谈最近</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2022/03/11/2019%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%EF%BD%9Ccovid-19/">
-                            2019新型冠狀病毒
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            2022年初我們來談談這個話題。
-病毒 肺炎肆虐全球三年起
-19年最早在中國武漢 發源
-新興冠狀病毒covid-19 則為這則病毒命名編號
-顧名思義 嚴重性傳染性肺炎
-
-變異病毒分支2020年下半年Alpha
-Beta、Gamma、
-2020年6月D...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Mar 11 2022 12:56:42 GMT+0800">
-                
-                    2022-03-11
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/note/">note</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/covid-19/">covid-19</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/Omicron/">Omicron</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/">新型冠狀病毒</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2022/03/11/2019%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%EF%BD%9Ccovid-19/">Read more<span class="seo-reader-text">2019新型冠狀病毒</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -1258,10 +1110,18 @@ Beta、Gamma、
         <div class="text-center">
             &copy;
             
-              <span>2019</span>
+              <span>2022</span>
               -
             
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Avery</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        59 posts in total
+                    </span>
+                    
+                </p>
             
         </div>
         
@@ -1283,16 +1143,30 @@ Beta、Gamma、
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
         </div>
         
-            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
-                
-                    http://beian.miit.gov.cn/
-                
-                ">鲁ICP备19049325号</a></div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
         
         
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
         
         
         
@@ -1348,6 +1222,35 @@ Beta、Gamma、
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -1409,6 +1312,10 @@ Beta、Gamma、
 
 
 
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
 
 
     
@@ -1421,6 +1328,16 @@ Beta、Gamma、
 <script src="/js/layouts/lazyload.js" type="module"></script>
 
 
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
 
@@ -1438,18 +1355,29 @@ Beta、Gamma、
 
 
 
-
-<div class="post-scripts" data-swup-reload-script>
     
-        
-<script src="/js/tools/tocToggle.js" type="module"></script>
+<script src="/js/libs/anime.min.js"></script>
 
-<script src="/js/layouts/toc.js" type="module"></script>
 
-<script src="/js/plugins/tabs.js" type="module"></script>
+
+
 
     
-</div>
+<script src="/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
 
 
     <div id="aplayer"></div>

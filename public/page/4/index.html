@@ -49,7 +49,8 @@
     
     <title>
         
-        Jioushan Blog
+            Jioushan Blog - 真白屋
+        
     </title>
 
     
@@ -57,157 +58,6 @@
 
 
     <!--- Inject Part-->
-    
-
-    
-        <style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
-    
-<script src="/js/libs/anime.min.js"></script>
-
-    <h1 class="ml13">
-        Jioushan Blog
-    </h1>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [100,0],
-                translateZ: 0,
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            }).add({
-            targets: '.ml13 .letter',
-            translateY: [0,-100],
-            opacity: [1,0],
-            easing: "easeInExpo",
-            duration: 1200,
-            delay: (el, i) => 100 + 30 * i
-        });
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
-        }
-
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
-        } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
-        }
-
-        window.addEventListener('load', function () {
-            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
-        });
-
-        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
-        hidePreloaderAfterTimeout(5000);
-
-        function hidePreloaderAfterTimeout(delay) {
-            setTimeout(function () {
-                var preloader = document.querySelector('.preloader');
-                preloader.style.opacity = '0';
-                setTimeout(function () {
-                    preloader.style.display = 'none';
-                }, 200);
-            }, delay);
-        }
-    </script>
-</div>
     
 
     
@@ -221,23 +71,22 @@
     
 
     
-<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
 
     
-<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
 
     <!--- Font Part-->
     
     
     
     
-        <link href="" rel="stylesheet">
     
-
+    
 
     <script id="hexo-configurations">
     window.config = {"hostname":"www.jioushan.top","root":"/","language":"en"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"Read More","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"sidebar","announcement":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2019/4/04 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -257,6 +106,10 @@
 
     
     
+        
+<link rel="stylesheet" href="/fontawesome/light.min.css">
+
+    
     
     
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -273,6 +126,7 @@
 <!--        </span>-->
     
 </div>
+
 
 
 <main class="page-container" id="swup">
@@ -314,13 +168,12 @@
 
     
 
-    <div class="main-content-container">
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-
-    <div class="navbar-content ">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
@@ -370,10 +223,17 @@
                             </li>
                     
                     
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <!-- Mobile -->
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 
                 <div class="icon-item navbar-bar">
                     <div class="navbar-bar-middle"></div>
@@ -383,7 +243,7 @@
     </div>
 
     <!-- Mobile sheet -->
-    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
         <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
             
                 
@@ -429,13 +289,11 @@
 
             
             
-                
-            
         </ul>
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -443,7 +301,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -464,29 +322,17 @@
         
         
             
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">Jioushan Blog</div>
-                        
-                    </div>
-                    
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
+            <div class="sidebar-content" >
                 <div class="avatar flex justify-center">
     <img src="/favicon_pack/android-chrome-192x192.png">
 </div>
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">Avery</div>
     
-        <div class="label">Lv4</div>
-    
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -494,7 +340,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -521,6 +367,179 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2021/05/19/%E9%9A%8F%E8%AE%B0%E9%9A%8F%E6%83%B3/">
+                            随记随想
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            有时候写文章的时候，总是把语言说的较为严谨和死板化。其实生活中聊天的感觉的应该是随性化，虽然在用词要严谨性和恰当（虽然我经常词穷用词不太恰当）但是专业词汇总是说和没有兴趣的人听&#x2F;看也显得很无趣。他们也只能随声附和。或者直接讨厌掉。
+日常生活中我会有必要的时候记下什么来保证自己的过去某一状态中自己的思维或者脑海中思考的事情。开始我试着词汇，后来哲理性句子。对我而言不同的语言在过去的记...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed May 19 2021 16:56:14 GMT+0800">
+                
+                    2021-05-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        <li>
+                            | <a href="/categories/%E6%88%91%E7%9A%84%E8%A7%82%E7%82%B9%E7%9C%8B%E6%B3%95%E4%B8%8E%E8%A8%80%E8%AE%BA%EF%BC%81/">我的观点看法与言论！</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        <li>
+                            | <a href="/categories/%E6%97%A5%E8%AE%B0/">日记</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E6%97%A5%E8%AE%B0/">日记</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E8%A8%80%E8%AE%BA/">言论</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2021/05/19/%E9%9A%8F%E8%AE%B0%E9%9A%8F%E6%83%B3/">Read more<span class="seo-reader-text">随记随想</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2021/04/30/sexual-or-gender-diversity/">
+                            性别多元化
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            首先，声明！我应要尊重些许关于某些特定群体的称谓，而不应使用具有社会性同一色彩的称谓。而应使用正当尊重其群体的称谓。
+应持有此态度来接纳包容，以及这个群体的人。
+LGBTQIA
+L：Lesbian（女同性恋）(Les)
+G：gay（男同性恋）(Gay)
+B：Bisexual（双性恋）(Bi)
+P：Pansexual（泛性恋）(Pa)
+T：Transgender（跨性别群体）(MTF)(FTM...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Apr 30 2021 19:08:28 GMT+0800">
+                
+                    2021-04-30
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/lgbtq/">lgbtq</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/bisexual/">bisexual</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/gay/">gay</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/LES/">LES</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2021/04/30/sexual-or-gender-diversity/">Read more<span class="seo-reader-text">性别多元化</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2021/03/05/yahoo%E9%82%AE%E7%AE%B1/">
                             yahoo邮箱
                         </a>
@@ -528,10 +547,12 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             谈到Yahoo，虽然它没有昔日过去的辉煌。我想0x年的网民对这个名字从来都不陌生。（雅虎中国&#x2F;中国雅虎）
 虽然它后来一手好棋满盘皆输。对于当时的雅虎而言也没有想到Google 微软的上位。
 雅虎中国和周鸿伟那些破事也没必要再谈及。
-邮箱是一...
+邮箱是一个域名可以开展的最基础业务。及意味着你注册一个域名，利用服务器搭建邮件系统，可以说每一个域名都可以实现。
+但是，在过去年代，并非人人都可以像如今...
                         
                     </div>
 
@@ -608,8 +629,9 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             浅谈云游戏
-上接，去年的英伟达NOW的评测。当时我挂代理，去访问海外由英伟达所运营的云游戏。去年下半年，国内各大厂，就先继推出自己的云游戏。也许是互联网访问接入容易了，互联网的带宽冗余足以支持大量玩家先后挤入云电脑。。我测试过网易的云电脑。在网页上直...
+上接，去年的英伟达NOW的评测。当时我挂代理，去访问海外由英伟达所运营的云游戏。去年下半年，国内各大厂，就先继推出自己的云游戏。也许是互联网访问接入容易了，互联网的带宽冗余足以支持大量玩家先后挤入云电脑。。我测试过网易的云电脑。在网页上直接远程电脑。简单省事，不费力。当然它也开发手机版。毕竟纵观10年过去了。从原有处理文件离不开电脑，现在在智能手机上就可以解决各种各样问题。虽然我...
                         
                     </div>
 
@@ -686,8 +708,12 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             没有所谓的成熟，无非就是一群经历过绝望的人让一群没有经历过绝望的人去体会他们的绝望，来博取所谓的同情和理解。然而绝望的人只不过寻求的是一种 支持与解脱。
-没有所谓的成长，无非就是做出改变。一个人的成长不过就是做出一个改变又一个改变。没有人喜欢一直改变...
+没有所谓的成长，无非就是做出改变。一个人的成长不过就是做出一个改变又一个改变。没有人喜欢一直改变下去，总有一天他要停留在一个或者寻找到属于他自己的舒适区。
+（补档与1月26日记）事情已忘记！
+
+我期望的，也许真的错了。没有那种断臂天使的孩子...
                         
                     </div>
 
@@ -759,9 +785,11 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             此文章仅适合分享我的经验。也表示一种尝试。
 sony手机，属实搞笑。我记得曾经有张图，嗐，回退系统保存的截图没了、当时TG电报上有人嘲讽买sony 手机的傻子。
-当然我不是那个吃螃蟹的人。我没那份资本。不过我身旁的确还真钟爱于索法手机的人。去年还入了...
+当然我不是那个吃螃蟹的人。我没那份资本。不过我身旁的确还真钟爱于索法手机的人。去年还入了mark 2 .ummmmm
+接下文，我当然是二手淘了一个。首先交代自己去年上公开课的时候。曾经的mix2S被我忘在公开课教室。等我回去找的时候...
                         
                     </div>
 
@@ -838,11 +866,13 @@ sony手机，属实搞笑。我记得曾经有张图，嗐，回退系统保存�
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             大概终于咱攒够足够金子。入了台Macbook。M1的Mac并没有让我失望。
 交代前提：本人只是之前用过黑苹果～
 本文分为功能介绍使用（这里指更加DIY的功能）bug sure 改进
 （小白 big sure 指北指南）
-Mac是不适合用鼠标的。但并不...
+Mac是不适合用鼠标的。但并不是说不应该不用鼠标。而是这种交互体验键盘与触摸板就可以轻松替代鼠标。但是电子竞技无法替代。其实快捷键学习成本不是很高了。
+咱入的是日文版键盘。和...
                         
                     </div>
 
@@ -919,8 +949,10 @@ Mac是不适合用鼠标的。但并不...
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             在这里写一个致歉，@itsneko ！因为我的疏于管理，我并没有意识到时隔一个月之余。没看到您的留言。大概是发信系统出事了吧。我邮箱并没有收到当时几则留言，在这里万分抱歉。以后我一定会好好注意到，避免这个错误发生。
-另外，新的一年也请各位博主更努力。...
+另外，新的一年也请各位博主更努力。我的祝福迟到了。（虽然我也可以篡改时间，让它提前发出。）但是我的错误我必须承担责任。
+提前立个flag，我可能会为了节衣缩食（缩减维护成本）ht...
                         
                     </div>
 
@@ -992,9 +1024,11 @@ Mac是不适合用鼠标的。但并不...
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             我们为何在一家公司初创的时候，总是喜欢占用大量资源，内耗。而引起各个部门争斗。而当为了运营和发展，不得不做出的成本减耗。
 我看到很多po主在为了运营发展过程中，开设新项目，缩减旧项目。
-人们总是在计算一生中输入了多少字，其实背后应该计算他所删改。退格...
+人们总是在计算一生中输入了多少字，其实背后应该计算他所删改。退格了多少次。（背后的意义为，人总是再看到别人的成果，而应当思考他为之答案而实践了多少次错误。）
+也许他人，（即客观存在者，上帝视角之人）会笑到，一...
                         
                     </div>
 
@@ -1061,10 +1095,13 @@ Mac是不适合用鼠标的。但并不...
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             最近一直很想聊云游戏 这方面。
 上个月底朋友丢给我一篇文章。关于英伟达 的NOW 可以免费白嫖他的免费套餐。好像是可以免费每天1小时。
 
-说起云游戏。最早做这个应该是国内 达龙云  。但是普遍资费高昂。后来达龙云可能换了上家。感觉服务调整了不少。被玩...
+说起云游戏。最早做这个应该是国内 达龙云  。但是普遍资费高昂。后来达龙云可能换了上家。感觉服务调整了不少。被玩家唾弃。
+所以这篇文章，表面在谈论 英伟达的NOW  这项云游戏，实际我想谈一谈关于 云电脑，云游戏领域。
+用户接入的云产品。即RDP （远程连...
                         
                     </div>
 
@@ -1120,143 +1157,6 @@ Mac是不适合用鼠标的。但并不...
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90/">
-                            Linux系统换中科大镜像源
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            镜像源当然是国内用啦。国内，清华，中科大，阿里，网易。的都可以啦、
-虽然不想这里安利中科大的镜像源，不得不说他们有个工具很好用。
-点此访问 
-这里你只需要选择https接入（省得运营商屏蔽http）ipv6&#x2F;ipv4看你的协议支持咯。
-不过...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Jan 15 2020 23:48:54 GMT+0800">
-                
-                    2020-01-15
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/Debian/">Debian</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/raspberry/">raspberry</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E4%B8%AD%E7%A7%91%E5%A4%A7/">中科大</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2020/01/15/linux%E7%B3%BB%E7%BB%9F%E6%8D%A2%E4%B8%AD%E7%A7%91%E5%A4%A7%E9%95%9C%E5%83%8F%E6%BA%90/">Read more<span class="seo-reader-text">Linux系统换中科大镜像源</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2020/01/12/CM:CT:CU%E5%88%B0GCP%E5%8D%95%E5%90%91%E5%A6%82%E4%BD%95/">
-                            How about the three major domestic operators for the route tracking of large factories.
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-Previously written SS tutorials. But one-click scripting or something. Fool’s errands.Rack your brains for delay! Although i...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Jan 12 2020 05:10:54 GMT+0800">
-                
-                    2020-01-12
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/note/">note</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2020/01/12/CM:CT:CU%E5%88%B0GCP%E5%8D%95%E5%90%91%E5%A6%82%E4%BD%95/">Read more<span class="seo-reader-text">How about the three major domestic operators for the route tracking of large factories.</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -1283,10 +1183,18 @@ Previously written SS tutorials. But one-click scripting or something. Fool’s 
         <div class="text-center">
             &copy;
             
-              <span>2019</span>
+              <span>2022</span>
               -
             
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Avery</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        59 posts in total
+                    </span>
+                    
+                </p>
             
         </div>
         
@@ -1308,16 +1216,30 @@ Previously written SS tutorials. But one-click scripting or something. Fool’s 
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
         </div>
         
-            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
-                
-                    http://beian.miit.gov.cn/
-                
-                ">鲁ICP备19049325号</a></div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
         
         
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
         
         
         
@@ -1373,6 +1295,35 @@ Previously written SS tutorials. But one-click scripting or something. Fool’s 
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -1434,6 +1385,10 @@ Previously written SS tutorials. But one-click scripting or something. Fool’s 
 
 
 
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
 
 
     
@@ -1446,6 +1401,16 @@ Previously written SS tutorials. But one-click scripting or something. Fool’s 
 <script src="/js/layouts/lazyload.js" type="module"></script>
 
 
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
 
@@ -1463,18 +1428,29 @@ Previously written SS tutorials. But one-click scripting or something. Fool’s 
 
 
 
-
-<div class="post-scripts" data-swup-reload-script>
     
-        
-<script src="/js/tools/tocToggle.js" type="module"></script>
+<script src="/js/libs/anime.min.js"></script>
 
-<script src="/js/layouts/toc.js" type="module"></script>
 
-<script src="/js/plugins/tabs.js" type="module"></script>
+
+
 
     
-</div>
+<script src="/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
 
 
     <div id="aplayer"></div>

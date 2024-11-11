@@ -49,7 +49,8 @@
     
     <title>
         
-        Jioushan Blog
+            Jioushan Blog - 真白屋
+        
     </title>
 
     
@@ -57,157 +58,6 @@
 
 
     <!--- Inject Part-->
-    
-
-    
-        <style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
-    
-<script src="/js/libs/anime.min.js"></script>
-
-    <h1 class="ml13">
-        Jioushan Blog
-    </h1>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [100,0],
-                translateZ: 0,
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            }).add({
-            targets: '.ml13 .letter',
-            translateY: [0,-100],
-            opacity: [1,0],
-            easing: "easeInExpo",
-            duration: 1200,
-            delay: (el, i) => 100 + 30 * i
-        });
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
-        }
-
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
-        } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
-        }
-
-        window.addEventListener('load', function () {
-            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
-        });
-
-        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
-        hidePreloaderAfterTimeout(5000);
-
-        function hidePreloaderAfterTimeout(delay) {
-            setTimeout(function () {
-                var preloader = document.querySelector('.preloader');
-                preloader.style.opacity = '0';
-                setTimeout(function () {
-                    preloader.style.display = 'none';
-                }, 200);
-            }, delay);
-        }
-    </script>
-</div>
     
 
     
@@ -221,23 +71,22 @@
     
 
     
-<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
 
     
-<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
 
     <!--- Font Part-->
     
     
     
     
-        <link href="" rel="stylesheet">
     
-
+    
 
     <script id="hexo-configurations">
     window.config = {"hostname":"www.jioushan.top","root":"/","language":"en"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"Read More","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"sidebar","announcement":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2019/4/04 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -257,6 +106,10 @@
 
     
     
+        
+<link rel="stylesheet" href="/fontawesome/light.min.css">
+
+    
     
     
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -273,6 +126,7 @@
 <!--        </span>-->
     
 </div>
+
 
 
 <main class="page-container" id="swup">
@@ -314,13 +168,12 @@
 
     
 
-    <div class="main-content-container">
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-
-    <div class="navbar-content ">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
@@ -370,10 +223,17 @@
                             </li>
                     
                     
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <!-- Mobile -->
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 
                 <div class="icon-item navbar-bar">
                     <div class="navbar-bar-middle"></div>
@@ -383,7 +243,7 @@
     </div>
 
     <!-- Mobile sheet -->
-    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
         <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
             
                 
@@ -429,13 +289,11 @@
 
             
             
-                
-            
         </ul>
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -443,7 +301,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -464,29 +322,17 @@
         
         
             
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">Jioushan Blog</div>
-                        
-                    </div>
-                    
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
+            <div class="sidebar-content" >
                 <div class="avatar flex justify-center">
     <img src="/favicon_pack/android-chrome-192x192.png">
 </div>
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">Avery</div>
     
-        <div class="label">Lv4</div>
-    
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -494,7 +340,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -521,6 +367,156 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2022/05/18/%E8%AB%87%E8%AB%87%E6%9C%80%E8%BF%91/">
+                            谈谈最近
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            尝试以静态站迁移方向 书写新blogwell，我的博文都是比较闲散以日记方式存在的！
+最近我在试着博客框架迁移，过去在决定使用wordpress之前的时候，hexo，啊一些静态站也是在努力尝试的。或许近两年。无论是第三方CDN还是文件的变迁。包括自己也尝试在像gitbook这样的框架下写文章。发现有时候，或许一个好看的主题未必是主要的。丰富的内容才是重要的受众问题。
+当你掌握知识到一定能力，...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed May 18 2022 12:04:24 GMT+0800">
+                
+                    2022-05-18
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2022/05/18/%E8%AB%87%E8%AB%87%E6%9C%80%E8%BF%91/">Read more<span class="seo-reader-text">谈谈最近</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2022/03/11/2019%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%EF%BD%9Ccovid-19/">
+                            2019新型冠狀病毒
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            2022年初我們來談談這個話題。
+病毒 肺炎肆虐全球三年起
+19年最早在中國武漢 發源
+新興冠狀病毒covid-19 則為這則病毒命名編號
+顧名思義 嚴重性傳染性肺炎
+
+變異病毒分支2020年下半年Alpha
+Beta、Gamma、
+2020年6月Delta
+Omicron（突變達37）
+Variant of Interest, VOI），2020年7月時共有7株
+Lambda
+Mu
+
+20...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Mar 11 2022 12:56:42 GMT+0800">
+                
+                    2022-03-11
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/note/">note</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/covid-19/">covid-19</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/Omicron/">Omicron</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/">新型冠狀病毒</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2022/03/11/2019%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%EF%BD%9Ccovid-19/">Read more<span class="seo-reader-text">2019新型冠狀病毒</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2022/03/04/minio%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E6%A1%B6%E6%90%AD%E5%BB%BA/">
                             Minio分布式存储桶搭建
                         </a>
@@ -528,6 +524,7 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             好久没写字了，水一篇！
 MINIO 是啥？（不介绍了，自行度娘）
 涉及到因为这个软件 开源维护得也太快了
@@ -535,7 +532,10 @@ MINIO 是啥？（不介绍了，自行度娘）
 
 可如今它却变成这样
 
-部署分布式存储 我们按照它官方的文档 来部署。但是如果一遍就OK 那我们也把官方...
+部署分布式存储 我们按照它官方的文档 来部署。但是如果一遍就OK 那我们也把官方想的太简单了。
+踩了些坑 让我头疼了两天，和过去踩的那些坑相比这个太头疼了。索性我水了这篇文章。
+因为咱部署的是server （服务器）端
+MC...
                         
                     </div>
 
@@ -612,9 +612,12 @@ MINIO 是啥？（不介绍了，自行度娘）
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             若您曾看过我这篇文章 您应该意识到2022年了，事关此文章的经验已经过时了！
 为何半年左右我没有选择更新文章，一方面备案了一个域名，另一方面有些个人的事情要处理。
-我们总是根据 路由回传 和 MTR 包括Ping来测试当下机器到达对方机器的最优网络！...
+我们总是根据 路由回传 和 MTR 包括Ping来测试当下机器到达对方机器的最优网络！
+而所使用的工具方式不过是用来判断我们的链路（互联网链路）足不足够优秀的原因之一。
+上游的网络ISP运营商是我们所选择的。（从某一条件下，更改它...
                         
                     </div>
 
@@ -691,8 +694,10 @@ MINIO 是啥？（不介绍了，自行度娘）
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             From now on, I refuse to negotiate with the low-emotion INTJ.
-Reaffirm: Mutual equality and respect for exchanges are the fir...
+Reaffirm: Mutual equality and respect for exchanges are the first principles of exchanges.
+If required Chinese punctuation usage, pleas...
                         
                     </div>
 
@@ -747,6 +752,7 @@ Reaffirm: Mutual equality and respect for exchanges are the fir...
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             从今后起，本人拒绝于低情感INTJ交涉。
 重申：相互平等尊重交流是交往第一原则。
 如有需求 中文标点符号用法，请自取
@@ -811,11 +817,14 @@ INTX （mbti）
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             写作是个不可强求的过程。
 博客是存放自己的思绪的地方。诶呀！咱明明是技术博客。结果到最后。
 技术向一般。情感上 还给自己找吐槽点。更离谱的是，注册了一把米。到头来都是自己扒别人的大佬工程耍。
 总结自学的，用途。（仅限本人）
-什么领域都一知半解。都尝试...
+什么领域都一知半解。都尝试过。我记得以前有张表情包：本人精通bulabla（各种应用程序）的安装和卸载。
+编程不太行，抄代码，扒网站比谁都快。重复造轮子堪称模仿一绝。
+运...
                         
                     </div>
 
@@ -892,12 +901,14 @@ INTX （mbti）
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             我本不应在此表达心绪一类的事情。但却有必要来谈论。
 过去我所熟悉且有必要谈论的精神疾病。
 双向障碍 单向障碍。
 这两个名词分别带表。躁郁症 抑郁症
 这两个疾病 都因 情绪的起伏而诊断疾病。
-1.我认为：治疗 情绪障碍 是帮助 缓解 躁郁症 和抑郁症的...
+1.我认为：治疗 情绪障碍 是帮助 缓解 躁郁症 和抑郁症的有效手段。目前我仍坚持我过去判断，采用精神分析理论（话聊为基准，药物为辅的手段 配合治疗。
+（过去我本是一名单向障碍病人。如今当我的男友 是一名...
                         
                     </div>
 
@@ -974,10 +985,13 @@ INTX （mbti）
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             一不小心 就 三个月没更部落格！强调 没出事！
 之前忙于社交，忙于考试。忙于暑假。维护其他项目。
 大概就没去在这边写点内容。有些项目有点半途而废 的样子 笑。
-总是感觉给blog分类并不是我想要的。这边写点内容，那边也写点内容。就感觉为了写而写，失去...
+总是感觉给blog分类并不是我想要的。这边写点内容，那边也写点内容。就感觉为了写而写，失去了写下内容时发布那种感觉。反而使得内容变得重复，繁杂。
+感觉自己有时的确是那种容易半途而废的样子啦、有时间，有灵感的时候再捡起来。
+不聊网络，不...
                         
                     </div>
 
@@ -1044,11 +1058,13 @@ INTX （mbti）
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             此篇上接 此篇文章
 任 何人在一段关系 中 都应 坦诚 信任。这是一段关系的原则问题。‌
 而任何择 友与处世 态度决定了一切值不得值得你继续完成下去的理由。‌
 我们总是把最好的一面崭示啊给别人，把痛苦的一面留给自己。‌
-我就是觉得我不配一样。我本来是...
+我就是觉得我不配一样。我本来是什么样的人难道我没说吗？‌
+那种感觉我就是难受。你怕被控制。你不相信我。（或者说我还不配得到你的信任，甚至还不如一个比我多了半年交往的同学。你跟...
                         
                     </div>
 
@@ -1116,174 +1132,6 @@ INTX （mbti）
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2021/05/19/%E9%9A%8F%E8%AE%B0%E9%9A%8F%E6%83%B3/">
-                            随记随想
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            有时候写文章的时候，总是把语言说的较为严谨和死板化。其实生活中聊天的感觉的应该是随性化，虽然在用词要严谨性和恰当（虽然我经常词穷用词不太恰当）但是专业词汇总是说和没有兴趣的人听&#x2F;看也显得很无趣。他们也只能随声附和。或者直接讨厌掉。
-日常生活...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 19 2021 16:56:14 GMT+0800">
-                
-                    2021-05-19
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                    
-                
-                    
-                        <li>
-                            | <a href="/categories/%E6%88%91%E7%9A%84%E8%A7%82%E7%82%B9%E7%9C%8B%E6%B3%95%E4%B8%8E%E8%A8%80%E8%AE%BA%EF%BC%81/">我的观点看法与言论！</a>&nbsp;
-                        </li>
-                    
-                    
-                
-                    
-                        <li>
-                            | <a href="/categories/%E6%97%A5%E8%AE%B0/">日记</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E6%97%A5%E8%AE%B0/">日记</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/%E8%A8%80%E8%AE%BA/">言论</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2021/05/19/%E9%9A%8F%E8%AE%B0%E9%9A%8F%E6%83%B3/">Read more<span class="seo-reader-text">随记随想</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2021/04/30/sexual-or-gender-diversity/">
-                            性别多元化
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            首先，声明！我应要尊重些许关于某些特定群体的称谓，而不应使用具有社会性同一色彩的称谓。而应使用正当尊重其群体的称谓。
-应持有此态度来接纳包容，以及这个群体的人。
-LGBTQIA
-L：Lesbian（女同性恋）(Les)
-G：gay（男同性恋）(Gay...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Apr 30 2021 19:08:28 GMT+0800">
-                
-                    2021-04-30
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/lgbtq/">lgbtq</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/bisexual/">bisexual</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/gay/">gay</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/tags/LES/">LES</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2021/04/30/sexual-or-gender-diversity/">Read more<span class="seo-reader-text">性别多元化</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -1310,10 +1158,18 @@ G：gay（男同性恋）(Gay...
         <div class="text-center">
             &copy;
             
-              <span>2019</span>
+              <span>2022</span>
               -
             
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Avery</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        59 posts in total
+                    </span>
+                    
+                </p>
             
         </div>
         
@@ -1335,16 +1191,30 @@ G：gay（男同性恋）(Gay...
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
         </div>
         
-            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
-                
-                    http://beian.miit.gov.cn/
-                
-                ">鲁ICP备19049325号</a></div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
         
         
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
         
         
         
@@ -1400,6 +1270,35 @@ G：gay（男同性恋）(Gay...
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -1461,6 +1360,10 @@ G：gay（男同性恋）(Gay...
 
 
 
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
 
 
     
@@ -1473,6 +1376,16 @@ G：gay（男同性恋）(Gay...
 <script src="/js/layouts/lazyload.js" type="module"></script>
 
 
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
 
@@ -1490,18 +1403,29 @@ G：gay（男同性恋）(Gay...
 
 
 
-
-<div class="post-scripts" data-swup-reload-script>
     
-        
-<script src="/js/tools/tocToggle.js" type="module"></script>
+<script src="/js/libs/anime.min.js"></script>
 
-<script src="/js/layouts/toc.js" type="module"></script>
 
-<script src="/js/plugins/tabs.js" type="module"></script>
+
+
 
     
-</div>
+<script src="/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
 
 
     <div id="aplayer"></div>

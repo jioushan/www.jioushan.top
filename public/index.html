@@ -49,7 +49,8 @@
     
     <title>
         
-        Jioushan Blog
+            Jioushan Blog - 真白屋
+        
     </title>
 
     
@@ -57,157 +58,6 @@
 
 
     <!--- Inject Part-->
-    
-
-    
-        <style>
-    :root {
-        --preloader-background-color: #fff;
-        --preloader-text-color: #000;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --preloader-background-color: #202124;
-            --preloader-text-color: #fff;
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --preloader-background-color: #fff;
-            --preloader-text-color: #000;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .ml13 {
-            font-size: 2.6rem !important; /* Adjust this value as needed */
-        }
-    }
-
-    .preloader {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding: 12px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh; /* 'h-screen' is 100% of the viewport height */
-        background-color: var(--preloader-background-color);
-        z-index: 1100; /* 'z-[1100]' sets the z-index */
-        transition: opacity 0.2s ease-in-out;
-    }
-
-    .ml13 {
-        font-size: 3.2rem;
-        /* text-transform: uppercase; */
-        color: var(--preloader-text-color);
-        letter-spacing: -1px;
-        font-weight: 500;
-        font-family: 'Chillax-Variable', sans-serif;
-        text-align: center;
-    }
-
-    .ml13 .word {
-        display: inline-flex;
-        flex-wrap: wrap;
-        white-space: nowrap;
-    }
-
-    .ml13 .letter {
-        display: inline-block;
-        line-height: 1em;
-    }
-</style>
-
-<div class="preloader">
-    
-<script src="/js/libs/anime.min.js"></script>
-
-    <h1 class="ml13">
-        Jioushan Blog
-    </h1>
-    <script>
-        var textWrapper = document.querySelector('.ml13');
-        // Split text into words
-        var words = textWrapper.textContent.trim().split(' ');
-
-        // Clear the existing content
-        textWrapper.innerHTML = '';
-
-        // Wrap each word and its letters in spans
-        words.forEach(function(word) {
-            var wordSpan = document.createElement('span');
-            wordSpan.classList.add('word');
-            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
-            textWrapper.appendChild(wordSpan);
-            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
-        });
-
-
-        anime.timeline({loop: true})
-            .add({
-                targets: '.ml13 .letter',
-                translateY: [100,0],
-                translateZ: 0,
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            }).add({
-            targets: '.ml13 .letter',
-            translateY: [0,-100],
-            opacity: [1,0],
-            easing: "easeInExpo",
-            duration: 1200,
-            delay: (el, i) => 100 + 30 * i
-        });
-
-        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
-
-        // If the theme status is not found in local storage, check the preferred color scheme
-        if (themeStatus === undefined || themeStatus === null) {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                themeStatus = 'dark';
-            } else {
-                themeStatus = 'light';
-            }
-        }
-
-        // Now you can use the themeStatus variable in your code
-        if (themeStatus) {
-            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
-            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
-        } else {
-            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
-            document.documentElement.style.setProperty('--preloader-text-color', '#000');
-        }
-
-        window.addEventListener('load', function () {
-            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
-        });
-
-        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
-        hidePreloaderAfterTimeout(5000);
-
-        function hidePreloaderAfterTimeout(delay) {
-            setTimeout(function () {
-                var preloader = document.querySelector('.preloader');
-                preloader.style.opacity = '0';
-                setTimeout(function () {
-                    preloader.style.display = 'none';
-                }, 200);
-            }, delay);
-        }
-    </script>
-</div>
     
 
     
@@ -221,23 +71,22 @@
     
 
     
-<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
 
     
-<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
 
     <!--- Font Part-->
     
     
     
     
-        <link href="" rel="stylesheet">
     
-
+    
 
     <script id="hexo-configurations">
     window.config = {"hostname":"www.jioushan.top","root":"/","language":"en"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"Read More","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"sidebar","announcement":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2019/4/04 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":true,"id":"139139682-2"}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"This is my area, Plz don’t crush it.","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Caramelldansen","artist":1,"url":"https://cdn.jioushan.top/music/Caramelldansen%20%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BD%AF%EF%BD%B0%EF%BD%B3%EF%BE%8F%EF%BD%B3%EF%BE%8F%20%28%EF%BE%9F%E2%88%80%EF%BE%9F%29%20Japan%202008%20Version%20%28SE%29.mp3","cover":"https://msr.li/img/Caramelldansen.png","lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Index":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -257,6 +106,10 @@
 
     
     
+        
+<link rel="stylesheet" href="/fontawesome/light.min.css">
+
+    
     
     
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -273,6 +126,7 @@
 <!--        </span>-->
     
 </div>
+
 
 
 <main class="page-container" id="swup">
@@ -336,13 +190,12 @@
 </div>
     
 
-    <div class="main-content-container">
+    <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-
-    <div class="navbar-content has-home-banner">
+    <div class="navbar-content transition-navbar has-home-banner">
         <div class="left">
             
             <a class="logo-title" href="/">
@@ -392,10 +245,17 @@
                             </li>
                     
                     
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <!-- Mobile -->
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 
                 <div class="icon-item navbar-bar">
                     <div class="navbar-bar-middle"></div>
@@ -405,7 +265,7 @@
     </div>
 
     <!-- Mobile sheet -->
-    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
         <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
             
                 
@@ -451,13 +311,11 @@
 
             
             
-                
-            
         </ul>
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -465,7 +323,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -486,29 +344,17 @@
         
         
             
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">Jioushan Blog</div>
-                        
-                    </div>
-                    
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
+            <div class="sidebar-content" >
                 <div class="avatar flex justify-center">
     <img src="/favicon_pack/android-chrome-192x192.png">
 </div>
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">Avery</div>
     
-        <div class="label">Lv4</div>
-    
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">88</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">89</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -516,7 +362,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">57</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">59</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -543,6 +389,156 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2024/11/07/First,%E6%88%91%E5%B8%8C%E6%9C%9B%E8%B0%88%E8%B0%88%E6%88%91%E8%BF%B7%E5%A4%B1%E7%9A%84%E5%8D%8A%E5%B9%B4/">
+                            Note-11月份
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            2024y-11m
+hey,sooo tooo late, i am writting.
+First,我希望谈谈我迷失的半年。1.好吧我记不清， 认识了谁又和谁保持联系或不再和谁联络。给我些时间，我需要好好回忆下。
+2.这个月份 意味着，好事和不好的事情都要来临。我写blog又时候不是要吐槽什么，别参考前几篇我那么烂的情绪，也不应该带给我的读者。
+说真的在敲下键盘时，我脑海中想到的是，除了我...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Nov 07 2024 12:00:00 GMT+0800">
+                
+                    2024-11-07
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/note/">note</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Note/">Note</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/11/07/First,%E6%88%91%E5%B8%8C%E6%9C%9B%E8%B0%88%E8%B0%88%E6%88%91%E8%BF%B7%E5%A4%B1%E7%9A%84%E5%8D%8A%E5%B9%B4/">Read more<span class="seo-reader-text">Note-11月份</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/11/01/%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BA%86%E6%88%91%E4%BB%AC%E7%9A%84%E5%86%85%E9%83%A8DNS/">
+                            Only DNS ipv6 Use
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            我们提供了我们的内部DNS
+Only_IPV6 Use您可以使用此DNS进行
+我们的内部服务访问，以及适当的服务修正。
+来满足我们不同的服务需求。
+请指向我们的服务器2602:f919:93c::1
+2602:f919:939:9999::2
+DoH&#x2F;DoT
+https://dns.jsmsr.com:853/ 
+DoT&#x2F;Doh 还在测试不保证可用性.
+
+我们于2024年...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Fri Nov 01 2024 12:56:42 GMT+0800">
+                
+                    2024-11-01
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Network/">Network</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Network/">Network</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/11/01/%E6%88%91%E4%BB%AC%E6%8F%90%E4%BE%9B%E4%BA%86%E6%88%91%E4%BB%AC%E7%9A%84%E5%86%85%E9%83%A8DNS/">Read more<span class="seo-reader-text">Only DNS ipv6 Use</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2024/04/17/%E5%86%99%E4%B8%8B%E8%BF%99%E6%A0%B7%E7%9A%84%E6%96%87%E5%AD%97/">
                             Note-写下这样的文字
                         </a>
@@ -550,11 +546,13 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             写下这样的文字，
  我的人生总是过着这样的生活，在我还是孩子未成年的时候 ，每天都想做那些成年人做的事情，关注的方向。学习的动力。
 但这样很容易被母亲，老师，骂。又或是不被身边的人理解。
 有的人坚信合适年龄做合适的事情，但我从不这么认为。
-似乎不得不...
+似乎不得不提早成熟的我，早早的踏上了心智成年化的样子。尽管曾经我也拼过，但几乎被身边人和母亲拉回来。（亦或者绊倒我）
+我想过自己说了算自己握得住的人生，而...
                         
                     </div>
 
@@ -621,6 +619,7 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             故事是这样的，我最近被《5:20AM》这首歌洗脑了，而下面的单词便是遇到没有背过的单词一个笔记.
  
 
@@ -631,7 +630,15 @@
 てを繋い　つない
 蘇る　よみがえる　复活
 香り　かおり
-操る　あやつる...
+操る　あやつる　操作驾驶
+逃れる　のがれる
+ますます　　越来越 多多益善
+黒くも　
+記憶　きおく　
+酔って　よって
+透かす　すかす　透过
+氷　こおり
+死神　し...
                         
                     </div>
 
@@ -698,6 +705,7 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             故事只是朋友推荐给我的channel，而要准备考试所记录的一些词汇.
 新出単語2しゅつじょうけん　出場権
 ゆうしょう　優勝
@@ -708,7 +716,16 @@
 かつやく　活躍
 しょうちょう　象徴
 きょうどう　共同
-参...
+参画　さんかく
+縛る　しばる
+しんしゅつ　進出
+めいめい　命名
+ほうしょうきん　報奨金
+けた　桁
+えいよ　栄誉
+かくさ　格差
+かれん　可憐
+しゅが...
                         
                     </div>
 
@@ -775,12 +792,16 @@
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             3月份当我打开typora时候,心想要写点什么好呢。
 很久没写博文总结下最近的生活了。
 Note1.今年，比任何人都需要时间,去做好要做的事情和等待我做的事情。
 月初到处投简历去寻找工作。
 时至如今，4月份我仍在到处寻找。不知有谁想捞一捞我。
-Not...
+Note2.我接待了来自日本的一伙友人。
+和他们聊的还可以。但是当忙起来的时候便没空聊天了。
+有一些很有趣的经历。不过我想 不急于当下分享。
+Note...
                         
                     </div>
 
@@ -847,12 +868,13 @@ Not...
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             #一个长草的Blog记起更新了。
 Note1.今年1月份的时候 我不再使用wordpress.转而使用Hexo.
 这就出现了一些问题,
 评论1.曾经的评论，数据库被我留下来了。
 但是肯定无法再应用到这边的Hexo上面。
-框架更迭使用Hexo似乎担心的...
+框架更迭使用Hexo似乎担心的不再是文字丢失，担心的是主题作者跑路，前端渲染的资源不再可用。同时这也加快了使用体验。我最终不再使用php作为网站的主要语言。另一个角度对于建站...
                         
                     </div>
 
@@ -907,6 +929,7 @@ Note1.今年1月份的时候 我不再使用wordpress.转而使用Hexo.
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             合わない
 行わない
 買わない
@@ -929,7 +952,20 @@ Note1.今年1月份的时候 我不再使用wordpress.转而使用Hexo.
 驚かない
 片付かない
 乾かない
-...
+渇かない
+気づかない
+空かない
+付かない
+続かない
+泣かない
+開かない
+焼かない
+沸かない
+急がない
+騒がない
+ーーーーー
+移さない
+起こさない...
                         
                     </div>
 
@@ -968,9 +1004,11 @@ Note1.今年1月份的时候 我不再使用wordpress.转而使用Hexo.
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             一個人看電影uhmm，這次許久沒更新不是什麼重要的技術博文，大概只是分享一些自己的想法吧。
 今晚，再度一個人去看電影。放下手中的工作，擠出時間 出門去看場電影。 我得說 我逐漸 開始慢慢喜歡上這種感覺。只是很少有對味的片。 
-uhmm 近幾年網路的便...
+uhmm 近幾年網路的便利，讓follow的 有在Netflix（流媒體）看完。 
+我是一個能容忍孤獨的人，但是時常 自我對話久了，會讓人覺得活在自己的世界（曾經 的確...
                         
                     </div>
 
@@ -1009,11 +1047,14 @@ uhmm 近幾年網路的便...
 
                     <div class="home-article-content markdown-body">
                         
+                            
                             2024 yearNote1:2024年 跨年清晨我和 舍友去了海邊。他拍下來這樣的照片。
 
 
 很難想像Iphone可以拍出這樣的照片。如同廣告一樣
-Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太Newbird了。「I...
+Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太Newbird了。「IFS」
+不過這樣的活動真的很有趣，如果有機會可以請假出來。每個月都想去參加 呢！
+Note3:  考試 Or Talk
                         
                     </div>
 
@@ -1052,123 +1093,6 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2023/06/30/%E4%B8%8D%E5%AE%8C%E6%95%B4%E7%9A%84Gentoo%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/">
-                            Gentoo入门指北
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            description: 一些疑難雜症，希望可以幫到
-
-不完整的Gentoo安裝不過我建議你應當滿足/準備以下
-1.強大的內心
-2.一塊U盤和你要安裝的磁碟
-3.獨立思考的大腦
-4.不厭其煩的嘗試
-5.chatgpt &amp; Google &am...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jun 30 2023 02:44:39 GMT+0800">
-                
-                    2023-06-30
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/Linux/">Linux</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2023/06/30/%E4%B8%8D%E5%AE%8C%E6%95%B4%E7%9A%84Gentoo%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/">Read more<span class="seo-reader-text">Gentoo入门指北</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2023/06/10/BGP%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/">
-                            在公網宣告地址須知
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            🌏 在公網宣告地址須知基于种种因素，我决定将自己踏坑的经验整理出来。（最近翻技术的时候，看到别的大牛写的一些文章。自愧不如）当然，从某些因素而言，我的BGP知识不过还是小白。如果这点帮助有用的话，希望能够帮助那些有興趣的學習者，微不足道的解釋。毕竟...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Jun 10 2023 01:44:39 GMT+0800">
-                
-                    2023-06-10
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/Network/">Network</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2023/06/10/BGP%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/">Read more<span class="seo-reader-text">在公網宣告地址須知</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -1195,10 +1119,18 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
         <div class="text-center">
             &copy;
             
-              <span>2019</span>
+              <span>2022</span>
               -
             
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Avery</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        59 posts in total
+                    </span>
+                    
+                </p>
             
         </div>
         
@@ -1220,16 +1152,30 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
         
         <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
             <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.3</a></span>
         </div>
         
-            <div class="icp-info my-1"><a target="_blank" rel="nofollow" href="
-                
-                    http://beian.miit.gov.cn/
-                
-                ">鲁ICP备19049325号</a></div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
         
         
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
         
         
         
@@ -1285,6 +1231,35 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -1346,6 +1321,10 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
 
 
 
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
 
 
     
@@ -1358,6 +1337,16 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
 <script src="/js/layouts/lazyload.js" type="module"></script>
 
 
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
 
@@ -1375,18 +1364,29 @@ Note2:我參加了Ingress 青島的線下活動。他們都是Dalao，而我太N
 
 
 
-
-<div class="post-scripts" data-swup-reload-script>
     
-        
-<script src="/js/tools/tocToggle.js" type="module"></script>
+<script src="/js/libs/anime.min.js"></script>
 
-<script src="/js/layouts/toc.js" type="module"></script>
 
-<script src="/js/plugins/tabs.js" type="module"></script>
+
+
 
     
-</div>
+<script src="/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
 
 
     <div id="aplayer"></div>
